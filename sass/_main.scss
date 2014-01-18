@@ -1,0 +1,14 @@
+#container {
+	background: #28292c;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 90px;
+	overflow: hidden;
+	z-index: 9500;
+	// @include box-shadow(rgba(blue, 0.4) -25px 0 0 inset);
+	@include box-shadow(#1f2022 -2px 0px 9px);
+}

@@ -1,0 +1,12 @@
+.nav {
+	width: 90px;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background-image: url('../img/perforated_white_leather.jpg');
+	z-index: 3;
+	// @include box-shadow(red 2px 2px 10px);
+	// @include box-shadow(rgba(blue, 0.4) -25px 0 0 inset);
+}
