@@ -23,12 +23,17 @@
 		.column {
 			color: white;
 			display: block;
+			border-right: solid 3px #2a2c31;
+			height: 1500px;
 
 			.title {
 				display: block;
 				margin: 0 10px 0 10px;
-				background: red;
+				@include background-image(linear-gradient(top bottom, #b64221, #873119));
 				text-align: center;
+				height: 35px;
+				padding-top: 7px;
+				@include box-shadow(#1a1b1d 4px 4px 10px);
 			}
 		}
 	}

@@ -7336,13 +7336,24 @@ td.visible-print {
     /* line 23, ../sass/_main.scss */
     #wrapper .container .column {
       color: white;
-      display: block; }
-      /* line 27, ../sass/_main.scss */
+      display: block;
+      border-right: solid 3px #2a2c31;
+      height: 1500px; }
+      /* line 29, ../sass/_main.scss */
       #wrapper .container .column .title {
         display: block;
         margin: 0 10px 0 10px;
-        background: red;
-        text-align: center; }
+        background-image: -webkit-gradient(linear, 100% 0%, 0% 100%, color-stop(0%, #b64221), color-stop(100%, #873119));
+        background-image: -webkit-linear-gradient(top bottom, #b64221, #873119);
+        background-image: -moz-linear-gradient(top bottom, #b64221, #873119);
+        background-image: -o-linear-gradient(top bottom, #b64221, #873119);
+        background-image: linear-gradient(top bottom, #b64221, #873119);
+        text-align: center;
+        height: 35px;
+        padding-top: 7px;
+        -webkit-box-shadow: #1a1b1d 4px 4px 10px;
+        -moz-box-shadow: #1a1b1d 4px 4px 10px;
+        box-shadow: #1a1b1d 4px 4px 10px; }
 
 /* line 9, ../sass/style.scss */
 html {
