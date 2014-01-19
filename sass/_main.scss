@@ -1,20 +1,35 @@
-.container {
-	background: #28292c;
+#wrapper {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	left: 90px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 	overflow: hidden;
-	z-index: 9500;
-	// @include box-shadow(rgba(blue, 0.4) -25px 0 0 inset);
-	@include box-shadow(#1f2022 -2px 0px 9px);
 
-	.column {
-		color: white;
-		background: red;
-		display: block;
+	.container {
+		background: $containerbg;
+		position: absolute;
+		width: 96%;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 90px;
+		overflow: hidden;
+		z-index: 9500;
+		@include box-shadow(#1f2022 -2px 0px 9px);
+
+		.column {
+			color: white;
+			display: block;
+
+			.title {
+				display: block;
+				margin: 0 10px 0 10px;
+				background: red;
+				text-align: center;
+			}
+		}
 	}
 }

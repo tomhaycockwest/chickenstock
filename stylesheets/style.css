@@ -7310,25 +7310,39 @@ td.visible-print {
   z-index: 3; }
 
 /* line 1, ../sass/_main.scss */
-.container {
-  background: #28292c;
+#wrapper {
   position: absolute;
   height: 100%;
   width: 100%;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 90px;
-  overflow: hidden;
-  z-index: 9500;
-  -webkit-box-shadow: #1f2022 -2px 0px 9px;
-  -moz-box-shadow: #1f2022 -2px 0px 9px;
-  box-shadow: #1f2022 -2px 0px 9px; }
-  /* line 15, ../sass/_main.scss */
-  .container .column {
-    color: white;
-    background: red;
-    display: block; }
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden; }
+  /* line 11, ../sass/_main.scss */
+  #wrapper .container {
+    background: #28292c;
+    position: absolute;
+    width: 96%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 90px;
+    overflow: hidden;
+    z-index: 9500;
+    -webkit-box-shadow: #1f2022 -2px 0px 9px;
+    -moz-box-shadow: #1f2022 -2px 0px 9px;
+    box-shadow: #1f2022 -2px 0px 9px; }
+    /* line 23, ../sass/_main.scss */
+    #wrapper .container .column {
+      color: white;
+      display: block; }
+      /* line 27, ../sass/_main.scss */
+      #wrapper .container .column .title {
+        display: block;
+        margin: 0 10px 0 10px;
+        background: red;
+        text-align: center; }
 
 /* line 9, ../sass/style.scss */
 html {
