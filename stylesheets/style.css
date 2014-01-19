@@ -7308,6 +7308,25 @@ td.visible-print {
   bottom: 0;
   background-image: url("../img/perforated_white_leather.jpg");
   z-index: 3; }
+  /* line 11, ../sass/_nav.scss */
+  .nav #logo {
+    display: block;
+    padding: 4px 0;
+    cursor: auto;
+    margin: 10px auto 10px auto; }
+  /* line 18, ../sass/_nav.scss */
+  .nav ul {
+    display: block;
+    list-style: none;
+    width: 80px;
+    margin: 0;
+    padding: 5px 0 0 0;
+    text-align: center; }
+    /* line 26, ../sass/_nav.scss */
+    .nav ul li {
+      display: block;
+      padding: 10px 0 10px 8px;
+      border-bottom: 1px solid #1f1f1f; }
 
 /* line 1, ../sass/_main.scss */
 #wrapper {
@@ -7333,13 +7352,17 @@ td.visible-print {
     -webkit-box-shadow: #1f2022 -2px 0px 9px;
     -moz-box-shadow: #1f2022 -2px 0px 9px;
     box-shadow: #1f2022 -2px 0px 9px; }
-    /* line 23, ../sass/_main.scss */
+    @media screen and (min-width: 1950px) {
+      /* line 11, ../sass/_main.scss */
+      #wrapper .container {
+        width: 97%; } }
+    /* line 27, ../sass/_main.scss */
     #wrapper .container .column {
       color: white;
       display: block;
       border-right: solid 3px #2a2c31;
       height: 1500px; }
-      /* line 29, ../sass/_main.scss */
+      /* line 33, ../sass/_main.scss */
       #wrapper .container .column .title {
         display: block;
         margin: 0 10px 0 10px;

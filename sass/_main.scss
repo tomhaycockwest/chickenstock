@@ -20,6 +20,10 @@
 		z-index: 9500;
 		@include box-shadow(#1f2022 -2px 0px 9px);
 
+		@media screen and (min-width: 1950px) {
+			width: 97%;
+		}
+
 		.column {
 			color: white;
 			display: block;
