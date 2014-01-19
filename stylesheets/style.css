@@ -7327,6 +7327,18 @@ td.visible-print {
       display: block;
       padding: 10px 0 10px 8px;
       border-bottom: 1px solid #1f1f1f; }
+    /* line 32, ../sass/_nav.scss */
+    .nav ul .about-link {
+      display: block;
+      position: absolute;
+      width: 90px;
+      bottom: 10px;
+      left: 0;
+      margin: 0;
+      padding: 10px 0 0 0;
+      text-align: center;
+      border-bottom: none;
+      border-top: 1px solid #1f1f1f; }
 
 /* line 1, ../sass/_main.scss */
 #wrapper {
