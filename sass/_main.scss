@@ -32,10 +32,18 @@
 			width: 97%;
 		}
 
+		@media screen and (max-width: 1200px) {
+			overflow: auto;
+		}
+
 		.column {
 			color: white;
 			display: block;
 			border-right: solid 2px #2a2c31;
+
+			@media screen and (max-width: 1200px) {
+				margin:0 auto;
+			}
 
 
 			.title {
@@ -46,6 +54,10 @@
 				height: 35px;
 				padding-top: 7px;
 				@include box-shadow(#1a1b1d 4px 4px 10px);
+
+				@media screen and (max-width: 1200px) {
+					margin: 0 50px 0 10px;
+				}
 			}
 
 			ul.item-list {
@@ -78,6 +90,10 @@
 							position: absolute;
 							top: 63px;
 							right: 40px;
+
+							@media screen and (max-width: 1200px) {
+								right: 80px;
+							}
 						}
 					}
 				}

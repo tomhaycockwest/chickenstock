@@ -7374,12 +7374,20 @@ td.visible-print {
       /* line 19, ../sass/_main.scss */
       #wrapper .container {
         width: 97%; } }
-    /* line 35, ../sass/_main.scss */
+    @media screen and (max-width: 1200px) {
+      /* line 19, ../sass/_main.scss */
+      #wrapper .container {
+        overflow: auto; } }
+    /* line 39, ../sass/_main.scss */
     #wrapper .container .column {
       color: white;
       display: block;
       border-right: solid 2px #2a2c31; }
-      /* line 41, ../sass/_main.scss */
+      @media screen and (max-width: 1200px) {
+        /* line 39, ../sass/_main.scss */
+        #wrapper .container .column {
+          margin: 0 auto; } }
+      /* line 49, ../sass/_main.scss */
       #wrapper .container .column .title {
         display: block;
         margin: 0 10px 0 10px;
@@ -7394,35 +7402,43 @@ td.visible-print {
         -webkit-box-shadow: #1a1b1d 4px 4px 10px;
         -moz-box-shadow: #1a1b1d 4px 4px 10px;
         box-shadow: #1a1b1d 4px 4px 10px; }
-      /* line 51, ../sass/_main.scss */
+        @media screen and (max-width: 1200px) {
+          /* line 49, ../sass/_main.scss */
+          #wrapper .container .column .title {
+            margin: 0 50px 0 10px; } }
+      /* line 63, ../sass/_main.scss */
       #wrapper .container .column ul.item-list {
         width: 100%; }
-        /* line 54, ../sass/_main.scss */
+        /* line 66, ../sass/_main.scss */
         #wrapper .container .column ul.item-list li.item {
           width: 100%;
           display: table;
           height: 150px;
           border-bottom: solid 1px #2a2c31; }
-          /* line 60, ../sass/_main.scss */
+          /* line 72, ../sass/_main.scss */
           #wrapper .container .column ul.item-list li.item .item-container {
             width: 100%;
             position: relative;
             display: table-cell;
             vertical-align: middle;
             text-align: center; }
-            /* line 67, ../sass/_main.scss */
+            /* line 79, ../sass/_main.scss */
             #wrapper .container .column ul.item-list li.item .item-container .name {
               position: absolute;
               left: 40px;
               top: 63px; }
-            /* line 73, ../sass/_main.scss */
+            /* line 85, ../sass/_main.scss */
             #wrapper .container .column ul.item-list li.item .item-container .weight {
               text-align: center; }
-            /* line 77, ../sass/_main.scss */
+            /* line 89, ../sass/_main.scss */
             #wrapper .container .column ul.item-list li.item .item-container .price {
               position: absolute;
               top: 63px;
               right: 40px; }
+              @media screen and (max-width: 1200px) {
+                /* line 89, ../sass/_main.scss */
+                #wrapper .container .column ul.item-list li.item .item-container .price {
+                  right: 80px; } }
 
 /* line 9, ../sass/style.scss */
 html {
