@@ -8,6 +8,14 @@
 	left: 0;
 	overflow: hidden;
 
+	.increase {
+		color: #9a0d0d;
+	}
+
+	.decrease {
+		color: #418004;
+	}
+
 	.container {
 		background: $containerbg;
 		position: absolute;
@@ -27,8 +35,8 @@
 		.column {
 			color: white;
 			display: block;
-			border-right: solid 3px #2a2c31;
-			height: 1500px;
+			border-right: solid 2px #2a2c31;
+
 
 			.title {
 				display: block;
@@ -38,6 +46,41 @@
 				height: 35px;
 				padding-top: 7px;
 				@include box-shadow(#1a1b1d 4px 4px 10px);
+			}
+
+			ul.item-list {
+				width: 100%;
+
+				li.item {
+					width: 100%;
+					display: table;
+					height: 150px;
+					border-bottom: solid 1px #2a2c31;
+
+					.item-container {
+						width: 100%;
+						position: relative;
+						display: table-cell;
+						vertical-align: middle;
+						text-align: center;
+
+						.name {
+							position: absolute;
+							left: 40px;
+							top: 63px;
+						}
+
+						.weight {
+							text-align: center;
+						}
+
+						.price {
+							position: absolute;
+							top: 63px;
+							right: 40px;
+						}
+					}
+				}
 			}
 		}
 	}
