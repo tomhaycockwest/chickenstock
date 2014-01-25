@@ -9,11 +9,11 @@
 	overflow: hidden;
 
 	.increase {
-		color: #9a0d0d;
+		color: $red;
 	}
 
 	.decrease {
-		color: #418004;
+		color: $green;
 	}
 
 	.container {
@@ -39,7 +39,7 @@
 		.column {
 			color: white;
 			display: block;
-			border-right: solid 2px #2a2c31;
+			border-right: solid 2px $border;
 
 			@media screen and (max-width: 1200px) {
 				margin:0 auto;
@@ -67,7 +67,7 @@
 					width: 100%;
 					display: table;
 					height: 150px;
-					border-bottom: solid 1px #2a2c31;
+					border-bottom: solid 1px $border;
 
 					.item-container {
 						width: 100%;
