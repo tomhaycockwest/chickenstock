@@ -2,10 +2,10 @@
 	<img id="logo" src="img/logo.png">
 	<ul id="nav-items">
 		<li>
-			<img src="img/Overview-selected.png">
+			<a href="index.php"><img src="img/Overview-selected.png"></a>
 		</li>
 		<li>
-			<img src="img/price-chart.png">
+			<a href="price-chart.php"><img src="img/price-chart.png"></a>
 		</li>
 		<li class="about-link">
 			<img src="img/About.png">
