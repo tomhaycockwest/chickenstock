@@ -1,0 +1,27 @@
+.sub-nav {
+	width: 100px;
+	height: 100%;
+	position: absolute;
+	left: 90px;
+	top: 0;
+	bottom: 0;
+	z-index: 9501;
+	@include box-shadow(#1f2022 2px 0px 9px);
+
+	ul {
+		display: block;
+		list-style: none;
+		width: 80px;
+		margin: 0;
+		padding: 5px 0 0 0;
+		text-align: center;
+
+		li {
+			display: block;
+			padding: 25px 0 25px 0px;
+			border-bottom: 1px solid #1f1f1f;
+			color: white;
+			width: 100px;
+		}
+	}
+}
