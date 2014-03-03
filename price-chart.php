@@ -21,9 +21,10 @@
 		</div>
 		<div class="container">
 			<div class="controls">
-				<div class="btn-group">
-				  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-				    Broilers &gt; 1,150g</span>
+
+				<div class="btn-group btn-input clearfix">
+				  <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+				    <span data-bind="label">Broilers &gt; 1,150g</span>
 				  </button>
 				  <ul class="dropdown-menu" role="menu">
 				    <li><a href="#">Broilers 1,150g &lt; 1,350g</a></li>
@@ -34,17 +35,17 @@
 
 
 				<div class="btn-group">
-				  <button type="button" class="btn btn-default active">Fresh</button>
-				  <button type="button" class="btn btn-default">Frozen</button>
+				  <button type="button" class="btn btn-default active option">Fresh</button>
+				  <button type="button" class="btn btn-default option">Frozen</button>
 				</div>
 
 				<div class="btn-group">
-				  <button type="button" class="btn btn-default">1m</button>
-				  <button type="button" class="btn btn-default">3m</button>
-				  <button type="button" class="btn btn-default">6m</button>
-				  <button type="button" class="btn btn-default">1y</button>
-				  <button type="button" class="btn btn-default">2y</button>
-				  <button type="button" class="btn btn-default">5y</button>
+				  <button type="button" class="btn btn-default active option">1m</button>
+				  <button type="button" class="btn btn-default option">3m</button>
+				  <button type="button" class="btn btn-default option">6m</button>
+				  <button type="button" class="btn btn-default option">1y</button>
+				  <button type="button" class="btn btn-default option">2y</button>
+				  <button type="button" class="btn btn-default option">5y</button>
 				</div>
 
 			</div>
