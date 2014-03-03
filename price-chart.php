@@ -22,7 +22,7 @@
 		<div class="container">
 			<div class="controls">
 
-				<div class="btn-group btn-input clearfix">
+				<div class="weight">
 				  <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
 				    <span data-bind="label">Broilers &gt; 1,150g</span>
 				  </button>
@@ -34,12 +34,12 @@
 				</div>
 
 
-				<div class="btn-group">
+				<div class="fresh-frozen">
 				  <button type="button" class="btn btn-default active option">Fresh</button>
 				  <button type="button" class="btn btn-default option">Frozen</button>
 				</div>
 
-				<div class="btn-group">
+				<div class="scale">
 				  <button type="button" class="btn btn-default active option">1m</button>
 				  <button type="button" class="btn btn-default option">3m</button>
 				  <button type="button" class="btn btn-default option">6m</button>

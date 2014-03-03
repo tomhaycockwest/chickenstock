@@ -3857,39 +3857,146 @@ input[type="button"].btn-block {
     right: 0;
     left: auto; } }
 /* line 3650, ../sass/_bootstrap.scss */
-.btn-group,
+.btn-group, .weight, .fresh-frozen,
+.scale,
 .btn-group-vertical {
   position: relative;
   display: inline-block;
   vertical-align: middle; }
 
 /* line 3657, ../sass/_bootstrap.scss */
-.btn-group > .btn,
+.btn-group > .btn, .weight > .btn, .fresh-frozen > .btn,
+.scale > .btn,
 .btn-group-vertical > .btn {
   position: relative;
   float: left; }
 
 /* line 3669, ../sass/_bootstrap.scss */
-.btn-group > .btn:hover,
+.btn-group > .btn:hover, .weight > .btn:hover, .fresh-frozen > .btn:hover,
+.scale > .btn:hover,
 .btn-group-vertical > .btn:hover,
 .btn-group > .btn:focus,
+.weight > .btn:focus,
+.fresh-frozen > .btn:focus,
+.scale > .btn:focus,
 .btn-group-vertical > .btn:focus,
 .btn-group > .btn:active,
+.weight > .btn:active,
+.fresh-frozen > .btn:active,
+.scale > .btn:active,
 .btn-group-vertical > .btn:active,
 .btn-group > .btn.active,
+.weight > .btn.active,
+.fresh-frozen > .btn.active,
+.scale > .btn.active,
 .btn-group-vertical > .btn.active {
   z-index: 2; }
 
 /* line 3674, ../sass/_bootstrap.scss */
-.btn-group > .btn:focus,
+.btn-group > .btn:focus, .weight > .btn:focus, .fresh-frozen > .btn:focus,
+.scale > .btn:focus,
 .btn-group-vertical > .btn:focus {
   outline: none; }
 
 /* line 3681, ../sass/_bootstrap.scss */
-.btn-group .btn + .btn,
+.btn-group .btn + .btn, .weight .btn + .btn, .fresh-frozen .btn + .btn,
+.scale .btn + .btn,
 .btn-group .btn + .btn-group,
+.weight .btn + .btn-group,
+.fresh-frozen .btn + .btn-group,
+.scale .btn + .btn-group,
+.btn-group .btn + .weight,
+.weight .btn + .weight,
+.fresh-frozen .btn + .weight,
+.scale .btn + .weight,
+.btn-group .btn + .fresh-frozen,
+.weight .btn + .fresh-frozen,
+.fresh-frozen .btn + .fresh-frozen,
+.scale .btn + .fresh-frozen,
+.btn-group .btn + .scale,
+.weight .btn + .scale,
+.fresh-frozen .btn + .scale,
+.scale .btn + .scale,
 .btn-group .btn-group + .btn,
-.btn-group .btn-group + .btn-group {
+.weight .btn-group + .btn,
+.fresh-frozen .btn-group + .btn,
+.scale .btn-group + .btn,
+.btn-group .weight + .btn,
+.weight .weight + .btn,
+.fresh-frozen .weight + .btn,
+.scale .weight + .btn,
+.btn-group .fresh-frozen + .btn,
+.weight .fresh-frozen + .btn,
+.fresh-frozen .fresh-frozen + .btn,
+.scale .fresh-frozen + .btn,
+.btn-group .scale + .btn,
+.weight .scale + .btn,
+.fresh-frozen .scale + .btn,
+.scale .scale + .btn,
+.btn-group .btn-group + .btn-group,
+.weight .btn-group + .btn-group,
+.fresh-frozen .btn-group + .btn-group,
+.scale .btn-group + .btn-group,
+.btn-group .weight + .btn-group,
+.weight .weight + .btn-group,
+.fresh-frozen .weight + .btn-group,
+.scale .weight + .btn-group,
+.btn-group .fresh-frozen + .btn-group,
+.weight .fresh-frozen + .btn-group,
+.fresh-frozen .fresh-frozen + .btn-group,
+.scale .fresh-frozen + .btn-group,
+.btn-group .scale + .btn-group,
+.weight .scale + .btn-group,
+.fresh-frozen .scale + .btn-group,
+.scale .scale + .btn-group,
+.btn-group .btn-group + .weight,
+.weight .btn-group + .weight,
+.fresh-frozen .btn-group + .weight,
+.scale .btn-group + .weight,
+.btn-group .weight + .weight,
+.weight .weight + .weight,
+.fresh-frozen .weight + .weight,
+.scale .weight + .weight,
+.btn-group .fresh-frozen + .weight,
+.weight .fresh-frozen + .weight,
+.fresh-frozen .fresh-frozen + .weight,
+.scale .fresh-frozen + .weight,
+.btn-group .scale + .weight,
+.weight .scale + .weight,
+.fresh-frozen .scale + .weight,
+.scale .scale + .weight,
+.btn-group .btn-group + .fresh-frozen,
+.weight .btn-group + .fresh-frozen,
+.fresh-frozen .btn-group + .fresh-frozen,
+.scale .btn-group + .fresh-frozen,
+.btn-group .weight + .fresh-frozen,
+.weight .weight + .fresh-frozen,
+.fresh-frozen .weight + .fresh-frozen,
+.scale .weight + .fresh-frozen,
+.btn-group .fresh-frozen + .fresh-frozen,
+.weight .fresh-frozen + .fresh-frozen,
+.fresh-frozen .fresh-frozen + .fresh-frozen,
+.scale .fresh-frozen + .fresh-frozen,
+.btn-group .scale + .fresh-frozen,
+.weight .scale + .fresh-frozen,
+.fresh-frozen .scale + .fresh-frozen,
+.scale .scale + .fresh-frozen,
+.btn-group .btn-group + .scale,
+.weight .btn-group + .scale,
+.fresh-frozen .btn-group + .scale,
+.scale .btn-group + .scale,
+.btn-group .weight + .scale,
+.weight .weight + .scale,
+.fresh-frozen .weight + .scale,
+.scale .weight + .scale,
+.btn-group .fresh-frozen + .scale,
+.weight .fresh-frozen + .scale,
+.fresh-frozen .fresh-frozen + .scale,
+.scale .fresh-frozen + .scale,
+.btn-group .scale + .scale,
+.weight .scale + .scale,
+.fresh-frozen .scale + .scale,
+.scale .scale + .scale {
   margin-left: -1px; }
 
 /* line 3686, ../sass/_bootstrap.scss */
@@ -3913,57 +4020,133 @@ input[type="button"].btn-block {
   clear: both; }
 
 /* line 3705, ../sass/_bootstrap.scss */
-.btn-toolbar .btn-group {
+.btn-toolbar .btn-group, .btn-toolbar .weight, .btn-toolbar .fresh-frozen,
+.btn-toolbar .scale {
   float: left; }
 
 /* line 3712, ../sass/_bootstrap.scss */
 .btn-toolbar > .btn + .btn,
 .btn-toolbar > .btn-group + .btn,
+.btn-toolbar > .weight + .btn,
+.btn-toolbar > .fresh-frozen + .btn,
+.btn-toolbar > .scale + .btn,
 .btn-toolbar > .btn + .btn-group,
-.btn-toolbar > .btn-group + .btn-group {
+.btn-toolbar > .btn + .weight,
+.btn-toolbar > .btn + .fresh-frozen,
+.btn-toolbar > .btn + .scale,
+.btn-toolbar > .btn-group + .btn-group,
+.btn-toolbar > .weight + .btn-group,
+.btn-toolbar > .fresh-frozen + .btn-group,
+.btn-toolbar > .scale + .btn-group,
+.btn-toolbar > .btn-group + .weight,
+.btn-toolbar > .weight + .weight,
+.btn-toolbar > .fresh-frozen + .weight,
+.btn-toolbar > .scale + .weight,
+.btn-toolbar > .btn-group + .fresh-frozen,
+.btn-toolbar > .weight + .fresh-frozen,
+.btn-toolbar > .fresh-frozen + .fresh-frozen,
+.btn-toolbar > .scale + .fresh-frozen,
+.btn-toolbar > .btn-group + .scale,
+.btn-toolbar > .weight + .scale,
+.btn-toolbar > .fresh-frozen + .scale,
+.btn-toolbar > .scale + .scale {
   margin-left: 5px; }
 
 /* line 3716, ../sass/_bootstrap.scss */
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .weight > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .fresh-frozen > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle),
+.scale > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0; }
 
 /* line 3720, ../sass/_bootstrap.scss */
-.btn-group > .btn:first-child {
+.btn-group > .btn:first-child, .weight > .btn:first-child, .fresh-frozen > .btn:first-child,
+.scale > .btn:first-child {
   margin-left: 0; }
 
 /* line 3724, ../sass/_bootstrap.scss */
-.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .weight > .btn:first-child:not(:last-child):not(.dropdown-toggle), .fresh-frozen > .btn:first-child:not(:last-child):not(.dropdown-toggle),
+.scale > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
 /* line 3730, ../sass/_bootstrap.scss */
-.btn-group > .btn:last-child:not(:first-child),
-.btn-group > .dropdown-toggle:not(:first-child) {
+.btn-group > .btn:last-child:not(:first-child), .weight > .btn:last-child:not(:first-child), .fresh-frozen > .btn:last-child:not(:first-child),
+.scale > .btn:last-child:not(:first-child),
+.btn-group > .dropdown-toggle:not(:first-child),
+.weight > .dropdown-toggle:not(:first-child),
+.fresh-frozen > .dropdown-toggle:not(:first-child),
+.scale > .dropdown-toggle:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0; }
 
 /* line 3735, ../sass/_bootstrap.scss */
-.btn-group > .btn-group {
+.btn-group > .btn-group, .weight > .btn-group, .fresh-frozen > .btn-group,
+.scale > .btn-group, .btn-group > .weight, .weight > .weight, .fresh-frozen > .weight,
+.scale > .weight, .btn-group > .fresh-frozen, .weight > .fresh-frozen, .fresh-frozen > .fresh-frozen,
+.scale > .fresh-frozen,
+.btn-group > .scale,
+.weight > .scale,
+.fresh-frozen > .scale,
+.scale > .scale {
   float: left; }
 
 /* line 3739, ../sass/_bootstrap.scss */
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .weight > .btn-group:not(:first-child):not(:last-child) > .btn, .fresh-frozen > .btn-group:not(:first-child):not(:last-child) > .btn,
+.scale > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group > .weight:not(:first-child):not(:last-child) > .btn, .weight > .weight:not(:first-child):not(:last-child) > .btn, .fresh-frozen > .weight:not(:first-child):not(:last-child) > .btn,
+.scale > .weight:not(:first-child):not(:last-child) > .btn, .btn-group > .fresh-frozen:not(:first-child):not(:last-child) > .btn, .weight > .fresh-frozen:not(:first-child):not(:last-child) > .btn, .fresh-frozen > .fresh-frozen:not(:first-child):not(:last-child) > .btn,
+.scale > .fresh-frozen:not(:first-child):not(:last-child) > .btn,
+.btn-group > .scale:not(:first-child):not(:last-child) > .btn,
+.weight > .scale:not(:first-child):not(:last-child) > .btn,
+.fresh-frozen > .scale:not(:first-child):not(:last-child) > .btn,
+.scale > .scale:not(:first-child):not(:last-child) > .btn {
   border-radius: 0; }
 
 /* line 3744, ../sass/_bootstrap.scss */
-.btn-group > .btn-group:first-child > .btn:last-child,
-.btn-group > .btn-group:first-child > .dropdown-toggle {
+.btn-group > .btn-group:first-child > .btn:last-child, .weight > .btn-group:first-child > .btn:last-child, .fresh-frozen > .btn-group:first-child > .btn:last-child,
+.scale > .btn-group:first-child > .btn:last-child, .btn-group > .weight:first-child > .btn:last-child, .weight > .weight:first-child > .btn:last-child, .fresh-frozen > .weight:first-child > .btn:last-child,
+.scale > .weight:first-child > .btn:last-child, .btn-group > .fresh-frozen:first-child > .btn:last-child, .weight > .fresh-frozen:first-child > .btn:last-child, .fresh-frozen > .fresh-frozen:first-child > .btn:last-child,
+.scale > .fresh-frozen:first-child > .btn:last-child,
+.btn-group > .scale:first-child > .btn:last-child,
+.weight > .scale:first-child > .btn:last-child,
+.fresh-frozen > .scale:first-child > .btn:last-child,
+.scale > .scale:first-child > .btn:last-child,
+.btn-group > .btn-group:first-child > .dropdown-toggle,
+.weight > .btn-group:first-child > .dropdown-toggle,
+.fresh-frozen > .btn-group:first-child > .dropdown-toggle,
+.scale > .btn-group:first-child > .dropdown-toggle,
+.btn-group > .weight:first-child > .dropdown-toggle,
+.weight > .weight:first-child > .dropdown-toggle,
+.fresh-frozen > .weight:first-child > .dropdown-toggle,
+.scale > .weight:first-child > .dropdown-toggle,
+.btn-group > .fresh-frozen:first-child > .dropdown-toggle,
+.weight > .fresh-frozen:first-child > .dropdown-toggle,
+.fresh-frozen > .fresh-frozen:first-child > .dropdown-toggle,
+.scale > .fresh-frozen:first-child > .dropdown-toggle,
+.btn-group > .scale:first-child > .dropdown-toggle,
+.weight > .scale:first-child > .dropdown-toggle,
+.fresh-frozen > .scale:first-child > .dropdown-toggle,
+.scale > .scale:first-child > .dropdown-toggle {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
 /* line 3749, ../sass/_bootstrap.scss */
-.btn-group > .btn-group:last-child > .btn:first-child {
+.btn-group > .btn-group:last-child > .btn:first-child, .weight > .btn-group:last-child > .btn:first-child, .fresh-frozen > .btn-group:last-child > .btn:first-child,
+.scale > .btn-group:last-child > .btn:first-child, .btn-group > .weight:last-child > .btn:first-child, .weight > .weight:last-child > .btn:first-child, .fresh-frozen > .weight:last-child > .btn:first-child,
+.scale > .weight:last-child > .btn:first-child, .btn-group > .fresh-frozen:last-child > .btn:first-child, .weight > .fresh-frozen:last-child > .btn:first-child, .fresh-frozen > .fresh-frozen:last-child > .btn:first-child,
+.scale > .fresh-frozen:last-child > .btn:first-child,
+.btn-group > .scale:last-child > .btn:first-child,
+.weight > .scale:last-child > .btn:first-child,
+.fresh-frozen > .scale:last-child > .btn:first-child,
+.scale > .scale:last-child > .btn:first-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0; }
 
 /* line 3755, ../sass/_bootstrap.scss */
-.btn-group .dropdown-toggle:active,
-.btn-group.open .dropdown-toggle {
+.btn-group .dropdown-toggle:active, .weight .dropdown-toggle:active, .fresh-frozen .dropdown-toggle:active,
+.scale .dropdown-toggle:active,
+.btn-group.open .dropdown-toggle,
+.open.weight .dropdown-toggle,
+.open.fresh-frozen .dropdown-toggle,
+.open.scale .dropdown-toggle {
   outline: 0; }
 
 /* line 3759, ../sass/_bootstrap.scss */
@@ -3988,22 +4171,26 @@ input[type="button"].btn-block {
   border-radius: 6px; }
 
 /* line 3780, ../sass/_bootstrap.scss */
-.btn-group > .btn + .dropdown-toggle {
+.btn-group > .btn + .dropdown-toggle, .weight > .btn + .dropdown-toggle, .fresh-frozen > .btn + .dropdown-toggle,
+.scale > .btn + .dropdown-toggle {
   padding-right: 8px;
   padding-left: 8px; }
 
 /* line 3785, ../sass/_bootstrap.scss */
-.btn-group > .btn-lg + .dropdown-toggle {
+.btn-group > .btn-lg + .dropdown-toggle, .weight > .btn-lg + .dropdown-toggle, .fresh-frozen > .btn-lg + .dropdown-toggle,
+.scale > .btn-lg + .dropdown-toggle {
   padding-right: 12px;
   padding-left: 12px; }
 
 /* line 3790, ../sass/_bootstrap.scss */
-.btn-group.open .dropdown-toggle {
+.btn-group.open .dropdown-toggle, .open.weight .dropdown-toggle, .open.fresh-frozen .dropdown-toggle,
+.open.scale .dropdown-toggle {
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
 
 /* line 3795, ../sass/_bootstrap.scss */
-.btn-group.open .dropdown-toggle.btn-link {
+.btn-group.open .dropdown-toggle.btn-link, .open.weight .dropdown-toggle.btn-link, .open.fresh-frozen .dropdown-toggle.btn-link,
+.open.scale .dropdown-toggle.btn-link {
   -webkit-box-shadow: none;
   box-shadow: none; }
 
@@ -4023,41 +4210,79 @@ input[type="button"].btn-block {
 /* line 3815, ../sass/_bootstrap.scss */
 .btn-group-vertical > .btn,
 .btn-group-vertical > .btn-group,
-.btn-group-vertical > .btn-group > .btn {
+.btn-group-vertical > .weight,
+.btn-group-vertical > .fresh-frozen,
+.btn-group-vertical > .scale,
+.btn-group-vertical > .btn-group > .btn,
+.btn-group-vertical > .weight > .btn,
+.btn-group-vertical > .fresh-frozen > .btn,
+.btn-group-vertical > .scale > .btn {
   display: block;
   float: none;
   width: 100%;
   max-width: 100%; }
 
 /* line 3823, ../sass/_bootstrap.scss */
-.btn-group-vertical > .btn-group:before,
-.btn-group-vertical > .btn-group:after {
+.btn-group-vertical > .btn-group:before, .btn-group-vertical > .weight:before, .btn-group-vertical > .fresh-frozen:before,
+.btn-group-vertical > .scale:before,
+.btn-group-vertical > .btn-group:after,
+.btn-group-vertical > .weight:after,
+.btn-group-vertical > .fresh-frozen:after,
+.btn-group-vertical > .scale:after {
   display: table;
   content: " "; }
 
 /* line 3828, ../sass/_bootstrap.scss */
-.btn-group-vertical > .btn-group:after {
+.btn-group-vertical > .btn-group:after, .btn-group-vertical > .weight:after, .btn-group-vertical > .fresh-frozen:after,
+.btn-group-vertical > .scale:after {
   clear: both; }
 
 /* line 3833, ../sass/_bootstrap.scss */
-.btn-group-vertical > .btn-group:before,
-.btn-group-vertical > .btn-group:after {
+.btn-group-vertical > .btn-group:before, .btn-group-vertical > .weight:before, .btn-group-vertical > .fresh-frozen:before,
+.btn-group-vertical > .scale:before,
+.btn-group-vertical > .btn-group:after,
+.btn-group-vertical > .weight:after,
+.btn-group-vertical > .fresh-frozen:after,
+.btn-group-vertical > .scale:after {
   display: table;
   content: " "; }
 
 /* line 3838, ../sass/_bootstrap.scss */
-.btn-group-vertical > .btn-group:after {
+.btn-group-vertical > .btn-group:after, .btn-group-vertical > .weight:after, .btn-group-vertical > .fresh-frozen:after,
+.btn-group-vertical > .scale:after {
   clear: both; }
 
 /* line 3842, ../sass/_bootstrap.scss */
-.btn-group-vertical > .btn-group > .btn {
+.btn-group-vertical > .btn-group > .btn, .btn-group-vertical > .weight > .btn, .btn-group-vertical > .fresh-frozen > .btn,
+.btn-group-vertical > .scale > .btn {
   float: none; }
 
 /* line 3849, ../sass/_bootstrap.scss */
 .btn-group-vertical > .btn + .btn,
 .btn-group-vertical > .btn + .btn-group,
+.btn-group-vertical > .btn + .weight,
+.btn-group-vertical > .btn + .fresh-frozen,
+.btn-group-vertical > .btn + .scale,
 .btn-group-vertical > .btn-group + .btn,
-.btn-group-vertical > .btn-group + .btn-group {
+.btn-group-vertical > .weight + .btn,
+.btn-group-vertical > .fresh-frozen + .btn,
+.btn-group-vertical > .scale + .btn,
+.btn-group-vertical > .btn-group + .btn-group,
+.btn-group-vertical > .weight + .btn-group,
+.btn-group-vertical > .fresh-frozen + .btn-group,
+.btn-group-vertical > .scale + .btn-group,
+.btn-group-vertical > .btn-group + .weight,
+.btn-group-vertical > .weight + .weight,
+.btn-group-vertical > .fresh-frozen + .weight,
+.btn-group-vertical > .scale + .weight,
+.btn-group-vertical > .btn-group + .fresh-frozen,
+.btn-group-vertical > .weight + .fresh-frozen,
+.btn-group-vertical > .fresh-frozen + .fresh-frozen,
+.btn-group-vertical > .scale + .fresh-frozen,
+.btn-group-vertical > .btn-group + .scale,
+.btn-group-vertical > .weight + .scale,
+.btn-group-vertical > .fresh-frozen + .scale,
+.btn-group-vertical > .scale + .scale {
   margin-top: -1px;
   margin-left: 0; }
 
@@ -4078,17 +4303,23 @@ input[type="button"].btn-block {
   border-top-left-radius: 0; }
 
 /* line 3870, ../sass/_bootstrap.scss */
-.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group-vertical > .weight:not(:first-child):not(:last-child) > .btn, .btn-group-vertical > .fresh-frozen:not(:first-child):not(:last-child) > .btn,
+.btn-group-vertical > .scale:not(:first-child):not(:last-child) > .btn {
   border-radius: 0; }
 
 /* line 3875, ../sass/_bootstrap.scss */
-.btn-group-vertical > .btn-group:first-child > .btn:last-child,
-.btn-group-vertical > .btn-group:first-child > .dropdown-toggle {
+.btn-group-vertical > .btn-group:first-child > .btn:last-child, .btn-group-vertical > .weight:first-child > .btn:last-child, .btn-group-vertical > .fresh-frozen:first-child > .btn:last-child,
+.btn-group-vertical > .scale:first-child > .btn:last-child,
+.btn-group-vertical > .btn-group:first-child > .dropdown-toggle,
+.btn-group-vertical > .weight:first-child > .dropdown-toggle,
+.btn-group-vertical > .fresh-frozen:first-child > .dropdown-toggle,
+.btn-group-vertical > .scale:first-child > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0; }
 
 /* line 3880, ../sass/_bootstrap.scss */
-.btn-group-vertical > .btn-group:last-child > .btn:first-child {
+.btn-group-vertical > .btn-group:last-child > .btn:first-child, .btn-group-vertical > .weight:last-child > .btn:first-child, .btn-group-vertical > .fresh-frozen:last-child > .btn:first-child,
+.btn-group-vertical > .scale:last-child > .btn:first-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0; }
 
@@ -4101,13 +4332,17 @@ input[type="button"].btn-block {
 
 /* line 3893, ../sass/_bootstrap.scss */
 .btn-group-justified > .btn,
-.btn-group-justified > .btn-group {
+.btn-group-justified > .btn-group,
+.btn-group-justified > .weight,
+.btn-group-justified > .fresh-frozen,
+.btn-group-justified > .scale {
   display: table-cell;
   float: none;
   width: 1%; }
 
 /* line 3899, ../sass/_bootstrap.scss */
-.btn-group-justified > .btn-group .btn {
+.btn-group-justified > .btn-group .btn, .btn-group-justified > .weight .btn, .btn-group-justified > .fresh-frozen .btn,
+.btn-group-justified > .scale .btn {
   width: 100%; }
 
 /* line 3904, ../sass/_bootstrap.scss */
@@ -6254,7 +6489,8 @@ button.close {
   margin-left: 5px; }
 
 /* line 6060, ../sass/_bootstrap.scss */
-.modal-footer .btn-group .btn + .btn {
+.modal-footer .btn-group .btn + .btn, .modal-footer .weight .btn + .btn, .modal-footer .fresh-frozen .btn + .btn,
+.modal-footer .scale .btn + .btn {
   margin-left: -1px; }
 
 /* line 6064, ../sass/_bootstrap.scss */
@@ -6732,13 +6968,14 @@ button.close {
   .carousel-indicators {
     bottom: 20px; } }
 /* line 6540, ../sass/_bootstrap.scss */
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .weight:before,
+.clearfix:after,
+.weight:after {
   display: table;
   content: " "; }
 
 /* line 6545, ../sass/_bootstrap.scss */
-.clearfix:after {
+.clearfix:after, .weight:after {
   clear: both; }
 
 /* line 6549, ../sass/_bootstrap.scss */
@@ -7298,6 +7535,11 @@ td.visible-print {
   th.hidden-print,
   td.hidden-print {
     display: none !important; } }
+/* line 8, ../sass/_mixins.scss */
+.fresh-frozen,
+.scale {
+  margin-left: 20px; }
+
 /* line 1, ../sass/_nav.scss */
 .nav {
   width: 90px;
@@ -7370,10 +7612,7 @@ td.visible-print {
 
 /* line 1, ../sass/_controls.scss */
 .controls {
-  display: block;
-  width: 1000px;
-  height: 100px;
-  margin: 0 auto;
+  margin-left: 125px;
   padding-top: 25px; }
 
 /* line 1, ../sass/_main.scss */
@@ -7487,8 +7726,7 @@ td.visible-print {
 .btn-default:hover,
 .dropdown-toggle.btn-default {
   color: #bf4423;
-  background-color: #282c37;
-  border-color: #313542; }
+  background-color: #282c37; }
 
 /* line 12, ../sass/style.scss */
 html {

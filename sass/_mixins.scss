@@ -1,0 +1,11 @@
+.weight {
+	@extend .btn-group;
+	@extend .btn-input;
+	@extend .clearfix
+}
+
+.fresh-frozen,
+.scale {
+	@extend .btn-group;
+	margin-left: 20px;
+}
