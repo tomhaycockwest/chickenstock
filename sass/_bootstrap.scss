@@ -2312,9 +2312,9 @@ fieldset[disabled] .btn {
 .btn-default:active,
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
-  color: #333333;
-  background-color: #ebebeb;
-  border-color: #adadad;
+  color: #bf4423;
+  background-color: #282c37;
+  border-color: #313542;
 }
 
 .btn-default:active,
@@ -3532,8 +3532,8 @@ input[type="button"].btn-block {
   margin: 2px 0 0;
   font-size: 14px;
   list-style: none;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
+  background-color: #28292c;
+  border: 1px solid #313542;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
@@ -3559,15 +3559,16 @@ input[type="button"].btn-block {
   clear: both;
   font-weight: normal;
   line-height: 1.428571429;
-  color: #333333;
+  color: #42454f;
+;
   white-space: nowrap;
 }
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  color: #262626;
+  color: #bf4423;
+  background-color: #282c37;
   text-decoration: none;
-  background-color: #f5f5f5;
 }
 
 .dropdown-menu > .active > a,

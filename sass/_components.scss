@@ -1,0 +1,15 @@
+// Buttons
+
+.btn-default {
+	color: #42454f;
+	background-color: #28292c;
+	border-color: #313542;
+}
+
+.btn-default.active, 
+.btn-default:hover,
+.dropdown-toggle.btn-default  {
+	color: #bf4423;
+	background-color: #282c37;
+	border-color: #313542;
+}
