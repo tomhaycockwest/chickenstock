@@ -1,2 +1,2 @@
 // Toggle Dropdown Menu
-$(".dropdown-toggle").dropdown();$(function(){$(".option").click(function(){$(this).addClass("active").siblings().removeClass("active")})});$(document.body).on("click",".dropdown-menu li",function(e){var t=$(e.currentTarget);t.closest(".btn-group").find('[data-bind="label"]').text(t.text()).end().children(".dropdown-toggle").dropdown("toggle");return!1});
+$(".dropdown-toggle").dropdown();$(function(){$(".option").click(function(){$(this).addClass("active").siblings().removeClass("active")})});$(document.body).on("click",".dropdown-menu li",function(e){var t=$(e.currentTarget);t.closest(".weight").find('[data-bind="label"]').text(t.text()).end().children(".dropdown-toggle").dropdown("toggle");return!1});
