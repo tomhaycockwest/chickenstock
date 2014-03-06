@@ -1,9 +1,27 @@
 .graph-container {
-	display: block;
-	margin: 0 auto;
-	width: 85%;
-
-
-	#graph {
-	}
+	margin-left: 125px;
+	padding-top: 25px;
 }
+
+// .inner-container {
+//   	background: #c0c0c0;
+//   	height: 100%;
+
+
+ 
+// 	&:before {
+// 	  content: '';
+// 	  display: inline-block;
+// 	  height: 100%; 
+// 	  vertical-align: middle;
+	    
+// 	  /* For visualization 
+// 	  background: #808080; width: 5px;
+// 	  */
+// 	 }
+ 
+// 	.graph-container {
+// 	  display: inline-block;
+// 	  vertical-align: middle;
+// 	 }
+// }
