@@ -27,6 +27,7 @@
 				    <span data-bind="label">Broilers &gt; 1,150g</span>
 				  </button>
 				  <ul class="dropdown-menu" role="menu">
+				  	<li><a href="#">Broilers &gt; 1,150g</a></li>
 				    <li><a href="#">Broilers 1,150g &lt; 1,350g</a></li>
 				    <li><a href="#">Broilers 1,350g &lt; 1,550g</a></li>
 				    <li><a href="#">Broilers 1,550g &lt; 2,000g</a></li>
@@ -48,6 +49,10 @@
 				  <button type="button" class="btn btn-default option">5y</button>
 				</div>
 
+			</div>
+
+			<div class="graph-container">
+				<div id="graph" style="width:1300px; height:700px"></div>
 			</div>
 
 		</div>
