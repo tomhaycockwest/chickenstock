@@ -36,8 +36,8 @@
 
 
 				<div class="fresh-frozen">
-				  <button type="button" class="btn btn-default active option">Fresh</button>
-				  <button type="button" class="btn btn-default option">Frozen</button>
+				  <button type="button" id="fresh" class="btn btn-default active option">Fresh</button>
+				  <button type="button" id="frozen" value ="replot" class="btn btn-default option">Frozen</button>
 				</div>
 
 				<div class="scale">
