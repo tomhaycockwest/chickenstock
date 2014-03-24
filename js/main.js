@@ -51,8 +51,17 @@ $(document).ready(function(){
 			tickInterval:'1 month',
 			}
 		},
-		series:[{label:'2013'}, {label:'2012'}]
-		// lineWidth:4, color:'#bf4423', shadow: false, 
+		series:[
+			{
+				label:'2013',
+				color:'#bf4423',
+				shadow: false
+			},
+			{
+				label:'2012',
+				shadow: false
+			}
+		]
 	});
 }); // end document ready
 
