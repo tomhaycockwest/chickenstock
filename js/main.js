@@ -52,12 +52,14 @@ $(document).ready(function(){
 			}
 		},
 		series:[
+			// twentyThirteen
 			{
 				label:'2013',
 				color:'#bf4423',
 				shadow: false
 			},
 			{
+			// twentyTwelve
 				label:'2012',
 				shadow: false
 			}
