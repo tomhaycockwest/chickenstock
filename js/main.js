@@ -50,6 +50,7 @@ $(document).ready(function(){
 				{
 				// twentyTwelve
 					label:'2012',
+					color:'#fd881b',
 					shadow: false
 				}
 			];
@@ -102,6 +103,7 @@ function freshUpdate() {
 					{
 					// twentyTwelve
 						label:'2012',
+						color:'#fd881b',
 						shadow: false
 					}
 				];
@@ -115,13 +117,13 @@ function frozenUpdate() {
 					// twentyThirteen
 					{
 						label:'2013',
-						color:'#4586f5',
+						color:'#0c5888',
 						shadow: false
 					},
 					{
 					// twentyTwelve
 						label:'2012',
-						color:'#4679bd',
+						color:'#0084d8',
 						shadow: false
 					}
 				];
