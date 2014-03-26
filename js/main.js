@@ -23,9 +23,9 @@ $(document).ready(function(){
 	 
 	});
 
-
+	// Sub-Nav active selector
 	$('.sub-nav-item').click(function(){
-	        $(this).addClass('active').siblings().removeClass('active')
+		$(this).addClass('active').siblings().removeClass('active');
 	});
 
 	// Graph Settings

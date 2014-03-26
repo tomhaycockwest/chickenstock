@@ -18,7 +18,7 @@
 		</div>
 		<div class="sub-nav">
 			<ul id="sub-nav-items">
-			    <li class="sub-nav-item"><a href="#">Chicken</a></li>
+			    <li class="sub-nav-item active"><a href="#">Chicken</a></li>
 			    <li class="sub-nav-item"><a href="#">Turkey</a></li>  
 			    <li class="sub-nav-item"><a href="#">Duckling</a></li>
 			    <li class="sub-nav-item"><a href="#">Goose</a></li>
@@ -26,7 +26,6 @@
 		</div>
 		<div class="container">
 			<div class="controls">
-
 				<div class="weight">
 				  <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
 				    <span data-bind="label">Broilers &gt; 1,150g</span>
@@ -38,7 +37,6 @@
 				    <li><a href="#">Broilers 1,550g &lt; 2,000g</a></li>
 				  </ul>
 				</div>
-
 
 				<div class="fresh-frozen">
 				  <button type="button" id="fresh" class="btn btn-default active option">Fresh</button>
