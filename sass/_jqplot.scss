@@ -133,8 +133,6 @@ table.jqplot-table-legend {
 }
 
 table.jqplot-table-legend, table.jqplot-cursor-legend {
-    background-color: rgba(255,255,255,0.6);
-    border: 1px solid #cccccc;
     position: absolute;
     font-size: 0.75em;
 }
@@ -168,8 +166,7 @@ td.jqplot-seriesToggle:hover, td.jqplot-seriesToggle:active {
 }
 
 div.jqplot-table-legend-swatch-outline {
-    border: 1px solid #cccccc;
-    padding:1px;
+    padding:4px;
 }
 
 div.jqplot-table-legend-swatch {
