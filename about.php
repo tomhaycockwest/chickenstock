@@ -1,0 +1,3 @@
+<div id="aboutContainer">
+	<div id="about"><button type="button" class="close" aria-hidden="true">&times;</button><h3>Chicken Stock</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt nulla est, et convallis massa molestie id. Nam posuere, urna sit amet volutpat tempor, justo ipsum ultricies dui, id lacinia odio velit eget lectus. Quisque at cursus dolor. Ut consectetur magna libero, a pretium mi tristique non. Nam vel pharetra enim, et pellentesque ipsum. Ut viverra ipsum massa, aliquam ullamcorper ligula cursus id. In ut lacus mauris. Proin urna est, auctor ac dictum eget, pulvinar nec eros. Fusce tempor suscipit felis, et tincidunt erat. Etiam venenatis odio vitae ligula dapibus, id euismod eros consectetur.</p></div>
+</div>

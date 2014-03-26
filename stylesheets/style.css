@@ -7994,6 +7994,45 @@ div.jqplot-noData-container {
   color: #bf4423;
   background-color: #282c37; }
 
-/* line 14, ../sass/style.scss */
+/* line 1, ../sass/_about.scss */
+#aboutContainer {
+  display: none;
+  position: absolute;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  z-index: 10; }
+  /* line 9, ../sass/_about.scss */
+  #aboutContainer:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+  /* line 16, ../sass/_about.scss */
+  #aboutContainer #about {
+    display: inline-block;
+    vertical-align: middle;
+    width: 700px;
+    height: 200px;
+    border: #a0a0a0 solid 1px;
+    background: #b8b9b9;
+    -webkit-box-shadow: black -2px 4px 12px;
+    -moz-box-shadow: black -2px 4px 12px;
+    box-shadow: black -2px 4px 12px;
+    position: relative; }
+    /* line 26, ../sass/_about.scss */
+    #aboutContainer #about p {
+      padding: 0 20px 20px 20px; }
+    /* line 30, ../sass/_about.scss */
+    #aboutContainer #about .close {
+      position: absolute;
+      top: 5px;
+      right: 10px; }
+
+/* line 38, ../sass/_about.scss */
+.appear {
+  display: block !important; }
+
+/* line 15, ../sass/style.scss */
 html {
   font-size: 62.5%; }

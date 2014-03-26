@@ -12,7 +12,7 @@
 					<a href="price-chart.php"><img src="img/price-chart-selected.png"></a>
 				</li>
 				<li class="about-link">
-					<img src="img/About.png">
+					<a id="aboutClick" href="#"><img src="img/About.png"></a>
 				</li>
 			</ul>
 		</div>
@@ -25,6 +25,7 @@
 			</ul>
 		</div>
 		<div class="container">
+			<?php include 'about.php'; ?>
 			<div class="controls">
 				<div class="weight">
 				  <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">

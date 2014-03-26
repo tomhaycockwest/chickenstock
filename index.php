@@ -12,11 +12,12 @@
 						<a href="price-chart.php"><img src="img/price-chart.png"></a>
 					</li>
 					<li class="about-link">
-						<img src="img/About.png">
+						<a id="aboutClick" href="#"><img src="img/About.png"></a>
 					</li>
 				</ul>
 			</div>
 			<div class="container">
+				<?php include 'about.php'; ?>
 				<div class="row">
 					<div class="col-lg-3 column">
 						<div class="title">Chicken</div>
