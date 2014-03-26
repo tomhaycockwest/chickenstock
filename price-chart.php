@@ -52,16 +52,6 @@
 				  <button type="button" id="fresh" class="btn btn-default active option">Fresh</button>
 				  <button type="button" id="frozen" value ="replot" class="btn btn-default option">Frozen</button>
 				</div>
-
-				<div class="scale">
-				  <button type="button" class="btn btn-default active option">1m</button>
-				  <button type="button" class="btn btn-default option">3m</button>
-				  <button type="button" class="btn btn-default option">6m</button>
-				  <button type="button" class="btn btn-default option">1y</button>
-				  <button type="button" class="btn btn-default option">2y</button>
-				  <button type="button" class="btn btn-default option">5y</button>
-				</div>
-
 			</div>
 
 			<div class="graph-container">
