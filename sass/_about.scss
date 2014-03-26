@@ -1,0 +1,42 @@
+#aboutContainer {
+	display: none;
+	position: absolute;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+
+	&:before {
+		content: '';
+		display: inline-block;
+		height: 100%; 
+		vertical-align: middle;
+	}
+
+	#about {
+		display: inline-block;
+		vertical-align: middle;
+		width: 700px;
+		height: 200px;
+		border: #a0a0a0 solid 1px;
+		background: $gray;
+		@include box-shadow(black -2px 4px 12px);
+		position: relative;
+
+		p {
+			padding: 0 20px 20px 20px;
+		}
+
+		.close {
+			position: absolute;
+			top: 5px;
+			right: 10px;
+		}
+	}
+}
+
+.appear {
+	display: block!important;
+}
+
+ 
