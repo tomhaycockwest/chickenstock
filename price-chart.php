@@ -3,7 +3,7 @@
 <body>
 	<div id="wrapper">
 		<div class="nav">
-			<img id="logo" src="img/logo.png">
+			<a href="index.php"><img id="logo" src="img/logo.png"></a>
 			<ul id="nav-items">
 				<li>
 					<a href="index.php"><img src="img/Overview.png"></a>
@@ -18,18 +18,10 @@
 		</div>
 		<div class="sub-nav">
 			<ul id="sub-nav-items">
-				<li>
-					Chicken
-				</li>
-				<li>
-					Turkey
-				</li>
-				<li>
-					Duckling
-				</li>
-				<li>
-					Goose
-				</li>
+			    <li class="sub-nav-item"><a href="#">Chicken</a></li>
+			    <li class="sub-nav-item"><a href="#">Turkey</a></li>  
+			    <li class="sub-nav-item"><a href="#">Duckling</a></li>
+			    <li class="sub-nav-item"><a href="#">Goose</a></li>
 			</ul>
 		</div>
 		<div class="container">

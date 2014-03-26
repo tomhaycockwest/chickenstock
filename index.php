@@ -2,7 +2,20 @@
 
 	<body>
 		<div id="wrapper">
-			<?php include 'nav.php' ?>
+			<div class="nav">
+				<a href="index.php"><img id="logo" src="img/logo.png"></a>
+				<ul id="nav-items">
+					<li>
+						<a href="index.php"><img src="img/Overview-selected.png"></a>
+					</li>
+					<li>
+						<a href="price-chart.php"><img src="img/price-chart.png"></a>
+					</li>
+					<li class="about-link">
+						<img src="img/About.png">
+					</li>
+				</ul>
+			</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-3 column">
