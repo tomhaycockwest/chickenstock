@@ -36,6 +36,11 @@
 			overflow: auto;
 		}
 
+		@media (min-device-width : 320px) and (max-device-width : 480px) {
+			left: 0;
+			width: 100%;
+		}
+
 		.column {
 			color: white;
 			display: block;
@@ -58,6 +63,10 @@
 				@media screen and (max-width: 1200px) {
 					margin: 0 50px 0 10px;
 				}
+
+				@media (min-device-width : 320px) and (max-device-width : 480px) {
+					display: none;
+				}
 			}
 
 			ul.item-list {
@@ -69,6 +78,11 @@
 					height: 150px;
 					border-bottom: solid 1px $border;
 
+
+					@media (min-device-width : 320px) and (max-device-width : 480px) {
+						height: 70px;
+					}
+
 					.item-container {
 						width: 100%;
 						position: relative;
@@ -76,10 +90,16 @@
 						vertical-align: middle;
 						text-align: center;
 
+
 						.name {
 							position: absolute;
 							left: 40px;
 							top: 63px;
+
+							@media (min-device-width : 320px) and (max-device-width : 480px) {
+								top: 25px;
+								left: 10px;
+							}
 						}
 
 						.weight {
@@ -90,6 +110,11 @@
 							position: absolute;
 							top: 63px;
 							right: 40px;
+
+							@media (min-device-width : 320px) and (max-device-width : 480px) {
+								top: 25px;
+								right: 10px!important;
+							}
 
 							@media screen and (max-width: 1200px) {
 								right: 80px;

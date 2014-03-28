@@ -8,6 +8,10 @@
 	background-image: url('../img/perforated_white_leather.jpg');
 	z-index: 3;
 
+	@media (min-device-width : 320px) and (max-device-width : 480px) {
+		display: none;
+	}
+
 	#logo {
 		display: block;
 		padding: 4px 0;
@@ -43,3 +47,4 @@
 		}
 	}
 }
+
