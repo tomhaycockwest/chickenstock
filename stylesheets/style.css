@@ -7854,19 +7854,23 @@ div.jqplot-noData-container {
 
 /* line 58, ../sass/_nav.scss */
 .mobile {
-  padding: 6px 15.5px;
-  border-radius: none; }
-  /* line 62, ../sass/_nav.scss */
-  .mobile:active {
-    color: white;
-    background-color: #bf4423;
-    border-color: #313542; }
-    /* line 67, ../sass/_nav.scss */
-    .mobile:active:first-child {
-      border-left: none; }
-    /* line 71, ../sass/_nav.scss */
-    .mobile:active:last-child {
-      border-right: none; }
+  padding: 6px 15.6px;
+  border-radius: none;
+  color: white !important;
+  background-color: #bf4423 !important;
+  border-color: #313542 !important; }
+  /* line 65, ../sass/_nav.scss */
+  .mobile:first-child {
+    border-left: none; }
+  /* line 69, ../sass/_nav.scss */
+  .mobile:last-child {
+    border-right: none; }
+  /* line 74, ../sass/_nav.scss */
+  .mobile:active, .mobile:hover {
+    color: #bf4423 !important;
+    background-color: #28292c !important;
+    border-color: #313542 !important;
+    border-top: none; }
 
 /* line 1, ../sass/_sub-nav.scss */
 .sub-nav {
@@ -7995,7 +7999,7 @@ div.jqplot-noData-container {
           @media (min-device-width: 320px) and (max-device-width: 480px) {
             /* line 75, ../sass/_main.scss */
             #wrapper .container .column ul.item-list li.item {
-              height: 70px; } }
+              height: 77px; } }
           /* line 86, ../sass/_main.scss */
           #wrapper .container .column ul.item-list li.item .item-container {
             width: 100%;

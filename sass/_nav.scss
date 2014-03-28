@@ -56,21 +56,26 @@
 }
 
 .mobile {
-	padding: 6px 15.5px;
+	padding: 6px 15.6px;
 	border-radius: none;
+	color: white !important;
+	background-color: $orange !important;
+	border-color: #313542 !important;
 
-	&:active {
-		color: white;
-		background-color: #bf4423;
-		border-color: #313542;
+	&:first-child {
+		border-left: none;
+	}
 
-		&:first-child {
-			border-left: none;
-		}
+	&:last-child {
+		border-right: none;
+	}
 
-		&:last-child {
-			border-right: none;
-		}
+	&:active,
+	&:hover {
+		color: $orange !important;
+		background-color: $containerbg !important;
+		border-color: #313542 !important;
+		border-top: none;
 	}
 }
 

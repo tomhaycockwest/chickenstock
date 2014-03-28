@@ -74,10 +74,10 @@
 
 					<div class="mobile-nav">
 						<div class="btn-group"  role="toolbar">
-						  <button type="button" class="btn btn-default mobile">Chicken</button>
-						  <button type="button" class="btn btn-default mobile">Turkey</button>
-						  <button type="button" class="btn btn-default mobile">Duckling</button>
-						  <button type="button" class="btn btn-default mobile">Goose</button>
+						  	<button type="button" class="btn btn-default mobile">Chicken</button>
+						  	<button type="button" class="btn btn-default mobile">Turkey</button>
+						 	<button type="button" class="btn btn-default mobile">Duckling</button>
+							<button type="button" class="btn btn-default mobile">Goose</button>
 						</div>
 					</div>
 
