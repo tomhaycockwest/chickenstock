@@ -48,3 +48,29 @@
 	}
 }
 
+.mobile-nav {
+	position: absolute;
+	bottom: -2px;
+	width: 100%;
+	z-index: 10;
+}
+
+.mobile {
+	padding: 6px 15.5px;
+	border-radius: none;
+
+	&:active {
+		color: white;
+		background-color: #bf4423;
+		border-color: #313542;
+
+		&:first-child {
+			border-left: none;
+		}
+
+		&:last-child {
+			border-right: none;
+		}
+	}
+}
+

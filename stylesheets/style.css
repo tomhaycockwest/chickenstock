@@ -7845,6 +7845,29 @@ div.jqplot-noData-container {
       border-bottom: none;
       border-top: 1px solid #1f1f1f; }
 
+/* line 51, ../sass/_nav.scss */
+.mobile-nav {
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  z-index: 10; }
+
+/* line 58, ../sass/_nav.scss */
+.mobile {
+  padding: 6px 15.5px;
+  border-radius: none; }
+  /* line 62, ../sass/_nav.scss */
+  .mobile:active {
+    color: white;
+    background-color: #bf4423;
+    border-color: #313542; }
+    /* line 67, ../sass/_nav.scss */
+    .mobile:active:first-child {
+      border-left: none; }
+    /* line 71, ../sass/_nav.scss */
+    .mobile:active:last-child {
+      border-right: none; }
+
 /* line 1, ../sass/_sub-nav.scss */
 .sub-nav {
   width: 100px;
