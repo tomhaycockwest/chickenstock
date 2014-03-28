@@ -1,5 +1,4 @@
 <?php include 'header.php'; ?>
-
 	<body>
 		<div id="wrapper">
 			<div class="nav">
@@ -72,6 +71,16 @@
 							</li>
 						</ul>
 					</div>
+
+					<div class="mobile-nav">
+						<div class="btn-group"  role="toolbar">
+						  <button type="button" class="btn btn-default">Chicken</button>
+						  <button type="button" class="btn btn-default">Turkey</button>
+						  <button type="button" class="btn btn-default">Duckling</button>
+						  <button type="button" class="btn btn-default">Goose</button>
+						</div>
+					</div>
+
 					<div class="col-lg-3 column">
 						<div class="title">Turkey</div>
 						<ul class="item-list">
