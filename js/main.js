@@ -28,7 +28,6 @@ $(document).ready(function(){
 				.end()
 			.children('.dropdown-toggle').dropdown('toggle');
 		return false;
-	 
 	});
 
 	// Sub-Nav active selector

@@ -71,9 +71,6 @@
 							</li>
 						</ul>
 					</div>
-
-					<?php include 'mobile-nav.php'; ?>
-
 					<div class="col-lg-3 column">
 						<div class="title">Turkey</div>
 						<ul class="item-list">

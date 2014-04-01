@@ -390,14 +390,14 @@ textarea {
 
 /* line 322, ../sass/_bootstrap.scss */
 a {
-  color: #428bca;
+  color: #ffffff;
   text-decoration: none; }
 
 /* line 328, ../sass/_bootstrap.scss */
 a:hover,
 a:focus {
-  color: #2a6496;
-  text-decoration: underline; }
+  color: #ffffff;
+  text-decoration: none; }
 
 /* line 333, ../sass/_bootstrap.scss */
 a:focus {
@@ -7852,25 +7852,35 @@ div.jqplot-noData-container {
   width: 100%;
   z-index: 10; }
 
-/* line 58, ../sass/_nav.scss */
+/* line 60, ../sass/_nav.scss */
 .mobile {
   padding: 6px 15.6px;
   border-radius: none;
   color: white !important;
   background-color: #bf4423 !important;
   border-color: #313542 !important; }
-  /* line 65, ../sass/_nav.scss */
+  /* line 67, ../sass/_nav.scss */
   .mobile:first-child {
     border-left: none; }
-  /* line 69, ../sass/_nav.scss */
+  /* line 71, ../sass/_nav.scss */
   .mobile:last-child {
     border-right: none; }
-  /* line 74, ../sass/_nav.scss */
+  /* line 76, ../sass/_nav.scss */
   .mobile:active, .mobile:hover {
     color: #bf4423 !important;
     background-color: #28292c !important;
     border-color: #313542 !important;
     border-top: none; }
+
+/* line 87, ../sass/_nav.scss */
+#chicken .chicken,
+#turkey .turkey,
+#duckling .duckling,
+#goose .goose {
+  color: #bf4423 !important;
+  background-color: #28292c !important;
+  border-color: #313542 !important;
+  border-top: none; }
 
 /* line 1, ../sass/_sub-nav.scss */
 .sub-nav {

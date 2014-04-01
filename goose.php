@@ -1,5 +1,5 @@
 <?php include 'header.php'; ?>
-	<body>
+	<body id="goose">
 		<div id="wrapper">
 			<div class="nav">
 				<a href="index.php"><img id="logo" src="img/logo.png"></a>
