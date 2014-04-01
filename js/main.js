@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+	// load mobile index page
+	$(function() {
+		if($(window).width() < 480){
+			window.location = "index-mobile.php";
+		}
+	});
+
+
 	// Control Settings
 
 	// Move Active Class
