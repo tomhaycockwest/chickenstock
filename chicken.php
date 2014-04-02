@@ -1,6 +1,5 @@
-
 					<div class="col-lg-3 column">
-						<div class="title">Turkey</div>
+						<div class="title">Chicken</div>
 						<ul class="item-list">
 							<li class="item">
 								<div class="item-container">	
@@ -30,7 +29,33 @@
 									<div class="price increase">&pound;3.89</div>
 								</div>
 							</li>
+							<li class="item">
+								<div class="item-container">	
+									<div class="name">Roasters</div>
+									<div class="weight">2,050g &lt; 2,450g</div>
+									<div class="price decrease">&pound;4.61</div>
+								</div>
+							</li>
+							<li class="item">
+								<div class="item-container">	
+									<div class="name">Roasters</div>
+									<div class="weight">2,450g &gt;</div>
+									<div class="price decrease">&pound;7.11</div>
+								</div>
+							</li>
+							<li class="item">
+								<div class="item-container">	
+									<div class="name">Skinless Breast Fillets</div>
+									<div class="price increase">&pound;2.12</div>
+								</div>
+							</li>
 						</ul>
 					</div>
 
-					
+					<?php include 'mobile-nav.php'; ?>
+				</div>
+			</div>
+		</div>
+		<?php include 'footer.php'; ?>
+	</body>
+</html>

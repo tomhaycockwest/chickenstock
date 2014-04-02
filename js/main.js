@@ -7,7 +7,14 @@ $(document).ready(function(){
 		}
 	});
 
+	
 
+
+	$('.option').click(function() {
+			var page = $(this).attr('href');
+			$('.row').load(page);
+			return false;
+		});
 
 	// Control Settings
 
