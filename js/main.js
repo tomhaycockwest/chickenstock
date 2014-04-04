@@ -8,11 +8,6 @@ $(document).ready(function(){
 		}
 	});
 
-
-	$('.row').load('chicken.php');
-	
-
-
 	$('.option').click(function() {
 			var page = $(this).attr('href');
 			$('.row').load(page);
