@@ -8,6 +8,8 @@ $(document).ready(function(){
 		}
 	});
 
+
+	$('.row').load('chicken.php');
 	
 
 
