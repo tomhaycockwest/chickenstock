@@ -4,6 +4,7 @@ $(document).ready(function(){
 	$(function() {
 		if($(window).width() < 480){
 			window.location = "index-mobile.php";
+			$('.row').load('chicken.php');
 		}
 	});
 
