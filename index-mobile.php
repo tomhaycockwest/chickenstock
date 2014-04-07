@@ -16,6 +16,7 @@
 					</li>
 				</ul>
 			</div>
+			<?php include 'mobile-nav.php'; ?>
 			<div class="container">
 				<?php include 'about.php'; ?>
 				<div class="row">
@@ -73,7 +74,6 @@
 						</ul>
 					</div>
 				</div>
-				<?php include 'mobile-nav.php'; ?>
 			</div>
 		</div>
 		<?php include 'footer.php'; ?>

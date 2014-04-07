@@ -1,7 +1,7 @@
 
 $(function() {
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		window.location.href = "http://staging.chickenstockapp.com/index-mobile.php",
+		window.location.href = "http://staging.chickenstockapp.com/index-mobile.php";
 		stop();
 	}
 });
