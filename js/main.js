@@ -1,13 +1,12 @@
+
+$(function() {
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		window.location.href = "http://staging.chickenstockapp.com/index-mobile.php",
+		stop();
+	}
+});
+
 $(document).ready(function(){
-
-	// load mobile index page
-	$(function() {
-		if($(window).width() < 480){
-			window.location = "index-mobile.php";
-			$('.row').load('chicken.php');
-		}
-	});
-
 	$('.option').click(function() {
 			var page = $(this).attr('href');
 			$('.row').load(page);
