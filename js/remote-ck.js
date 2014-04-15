@@ -1,1 +1,1 @@
-function drawVisualization(){$.ajax({url:"test.csv",async:!1,success:function(e){csv_as_array=$.csv.toArrays(e)},dataType:"text",complete:function(){console.log(csv_as_array)}})}var csv_as_array=[];drawVisualization();
+function loadPrices(){$.ajax({url:"test.csv",async:!1,success:function(e){csv_as_array=$.csv.toArrays(e)},dataType:"text"})}var csv_as_array=[];loadPrices();var col=$.map(csv_as_array,function(t,n){return t[0]});console.log(col);
