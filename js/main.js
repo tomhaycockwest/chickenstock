@@ -180,6 +180,11 @@ function frozenUpdate() {
 // $('body').append('<div>'+msg+'</div>')
 // }
 
+
+var result = $.csv.toArrays('http://staging.chickenstockapp.com/test.csv');
+console.log(result);
+
+
 }); // end document ready
 
 
