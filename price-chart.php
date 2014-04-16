@@ -32,10 +32,10 @@
 				    <span data-bind="label">Broilers &gt; 1,150g</span>
 				  </button>
 				  <ul class="dropdown-menu" role="menu">
-				  	<li><a href="#">Broilers &gt; 1,150g</a></li>
-				    <li><a href="#">Broilers 1,150g &lt; 1,350g</a></li>
-				    <li><a href="#">Broilers 1,350g &lt; 1,550g</a></li>
-				    <li><a href="#">Broilers 1,550g &lt; 2,000g</a></li>
+				  	<li><a id="b1150g" href="#">Broilers &gt; 1,150g</a></li>
+				    <li><a id="b1150g1350g" href="#">Broilers 1,150g &lt; 1,350g</a></li>
+				    <li><a id="b1350g1550g" href="#">Broilers 1,350g &lt; 1,550g</a></li>
+				    <li><a id="b1550g2000g" href="#">Broilers 1,550g &lt; 2,000g</a></li>
 				  </ul>
 				</div>
 
@@ -48,6 +48,8 @@
 			<div class="graph-container">
 				<div id="graph" style="width:1300px; height:700px"></div>
 			</div>
+
+
 
 		</div>
 	</div>
