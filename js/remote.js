@@ -1,8 +1,9 @@
 // load in csv file
+// var prices = "http://staging.chickenstockapp.com/test.csv";
 var csv_as_array = [];
 function loadPrices() {
   $.ajax({
-    url: "test.csv",
+    url: 'test.csv',
     async: false,
     success: function (csvd) {
         csv_as_array = $.csv.toArrays(csvd);
@@ -15,8 +16,7 @@ loadPrices();
 
 
 // Get the correct column from array
-var $searchOptions = $('.dropdown-menu li');
-$searchOptions.click(function (e) {
+$('.dropdown-menu li').click(function (e) {
     var searchBy = '';
     var clickedOptionId = e.target.id;
 
@@ -37,7 +37,7 @@ $searchOptions.click(function (e) {
     }
 
     var col = $.map(csv_as_array,
-        function getCol(value,index){
+        function getCol(value){
 
             return value[searchBy];
         });

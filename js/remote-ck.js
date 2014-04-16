@@ -1,2 +1,3 @@
 // load in csv file
-function loadPrices(){$.ajax({url:"test.csv",async:!1,success:function(e){csv_as_array=$.csv.toArrays(e)},dataType:"text"})}var csv_as_array=[];loadPrices();var $searchOptions=$(".dropdown-menu li");$searchOptions.click(function(e){var t="",n=e.target.id;switch(n){case"b1150g":t=1;break;case"b1150g1350g":t=3;break;case"b1350g1550g":t=5;break;case"b1550g2000g":t=12;break;default:}var r=$.map(csv_as_array,function(n,r){return n[t]});console.log(r)});
+// var prices = "http://staging.chickenstockapp.com/test.csv";
+function loadPrices(){$.ajax({url:"test.csv",async:!1,success:function(e){csv_as_array=$.csv.toArrays(e)},dataType:"text"})}var csv_as_array=[];loadPrices();$(".dropdown-menu li").click(function(e){var t="",n=e.target.id;switch(n){case"b1150g":t=1;break;case"b1150g1350g":t=3;break;case"b1350g1550g":t=5;break;case"b1550g2000g":t=12;break;default:}var r=$.map(csv_as_array,function(n){return n[t]});console.log(r)});
