@@ -58,12 +58,18 @@ $('.dropdown-menu li').click(function (e) {
     console.log(typeof col1[0]);
     console.log(typeof col2[0]);
 
-    var date = col1[0];
+    // get first item from date array
+    var dateHyphenated = col1[0];
+
+    // remove hyphen from date string
+    var date = dateHyphenated.split("-").join(" ");
+
+    // get first item from weight array and convert string to integer
     var weight = parseInt(col2[0],10);
 
-    var array = [[date + ',' + weight]];
+    // combine date and weight items into one object to parse to the graph
+    var array = [["'" + date + "'" + "," + weight]];
     console.log(array);
-    // console.log(csv_as_array[searchBy][searchTwo]);
 });
 
     
