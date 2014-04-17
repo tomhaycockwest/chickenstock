@@ -59,17 +59,50 @@ $('.dropdown-menu li').click(function (e) {
     console.log(typeof col2[0]);
 
 
-    var result = [];
+    var date = [];
     for (i = 0; i < col1.length; i++) {
         var dateHyphenated = col1[i];
         // remove hyphen from date string
-        var date = dateHyphenated.split("-").join(" ");
-            result += date;
+        var dateNoHyphen = dateHyphenated.split("-").join(" ");
+        // push to new array
+        date.push(dateNoHyphen);
     }
 
-    console.log(result);
+    var weight = [];
+    for (i = 0; i < col1.length; i++) {
+        // get item from weight array and convert string to integer
+        var weightString = parseInt(col2[i],10);
+        // push to new array
+        weight.push(weightString);
+    }
+    
+    console.log(date);
+    console.log(weight);
 
+var all = [date,weight];
+var mix = [];
+ for (var i = 0; all.length !== 0; i++) {
+     var j = 0;
+     while (j < all.length) {
+         if (i >= all[j].length) {
+             all.splice(j, 1);
+         } else {
+            // var combine = all[i];
+            // var combine2 = all[j];
+            // var combined = [combine + combine2];
+            // var split = combine.split(",").join(" ");
+           // console.log(combine);
+             mix.push(all[j][i]);
+             j += 1;
+         }
+     }
+ }
 
+console.log(mix);
+
+ // console.log(mix);
+
+    // console.log(plots);
 
     // // get first item from date array
     // var dateHyphenated = col1[0];
