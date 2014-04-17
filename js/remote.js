@@ -58,18 +58,31 @@ $('.dropdown-menu li').click(function (e) {
     console.log(typeof col1[0]);
     console.log(typeof col2[0]);
 
-    // get first item from date array
-    var dateHyphenated = col1[0];
 
-    // remove hyphen from date string
-    var date = dateHyphenated.split("-").join(" ");
+    var result = [];
+    for (i = 0; i < col1.length; i++) {
+        var dateHyphenated = col1[i];
+        // remove hyphen from date string
+        var date = dateHyphenated.split("-").join(" ");
+            result += date;
+    }
 
-    // get first item from weight array and convert string to integer
-    var weight = parseInt(col2[0],10);
+    console.log(result);
 
-    // combine date and weight items into one object to parse to the graph
-    var array = [["'" + date + "'" + "," + weight]];
-    console.log(array);
+
+
+    // // get first item from date array
+    // var dateHyphenated = col1[0];
+
+    // // remove hyphen from date string
+    // var date = dateHyphenated.split("-").join(" ");
+
+    // // get first item from weight array and convert string to integer
+    // var weight = parseInt(col2[0],10);
+
+    // // combine date and weight items into one object to parse to the graph
+    // var array = [["'" + date + "'" + "," + weight]];
+    // console.log(array);
 });
 
     
