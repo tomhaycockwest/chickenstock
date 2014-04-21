@@ -14,8 +14,12 @@ function loadPrices() {
 
 loadPrices();
 
+
+
 var productType = 'b1150g';
 var freshFrozen = 'fresh';
+var cdate = new Date();
+var cyear = cdate.getFullYear();
 
 // Get the correct column from array
 function getData() {
@@ -70,12 +74,6 @@ function getData() {
     var date = [];
     var mix = '';
 
-    // $('.active').attr('id');
-
-    // alert($('.fresh-frozen.active').attr('id'));
-
-
-
     for (i = 0; i < col1.length; i++) {
         var dateHyphenated = col1[i];
         var weightString = parseInt(col2[i],10);
@@ -86,20 +84,25 @@ function getData() {
         // push to new array
         date.push(dateNoHyphen);
 
-        if (freshFrozen == 'fresh') {
+       
 
-            mix += "[" + dateNoHyphen + "," + weightString + "]" + ",";
+        var dyear = "20" + dateHyphenated.substr(dateHyphenated.length - 2); 
 
-        } else {
+        if (dyear == cyear) {
+            if (freshFrozen == 'fresh') {
 
-            mix += "[" + dateNoHyphen + "," + frozenCost + "]" + ",";
-        }
+                mix += "[" + dateNoHyphen + "," + weightString + "]" + ",";
 
+            } else {
 
-
+                mix += "[" + dateNoHyphen + "," + frozenCost + "]" + ",";
+            }
+    }
     }
 
 console.log(mix);
+
+console.log(dyear);
 
 
 }
@@ -108,7 +111,7 @@ console.log(mix);
 $('.dropdown-menu li').click(function (e) {
     productType = e.target.id;
     console.log(productType);
-    getData();
+    renderGraph();
 });
 $('#fresh').click(function () {
     freshFrozen = 'fresh';

@@ -113,7 +113,6 @@ $(document).ready(function(){
 }
 
 var plot1;
-renderGraph();
 
 function freshUpdate() {
     twentyTwelve = freshDataTwelve;
@@ -154,36 +153,6 @@ function frozenUpdate() {
 				];
     renderGraph();
 }
-
-
-
-// function doUpdate() {
-//     if (newData.length) {
-//         var val = newData.shift();
-//         // $.post('/echo/html/', {
-//         //     html: val
-//         // },
-//          function(response) {
-//             setTimeout(doUpdate, 3000)
-//             var newVal = new Number(response); /* update storedData array*/
-//             storedData.push(newVal);
-//             renderGraph();
-//             log('New Value '+ newVal+' added')
-//         })
-
-//     } else {
-//         log("All Done")
-//     }
-// }
-
-// function log(msg) {
-// $('body').append('<div>'+msg+'</div>')
-// }
-
-
-var result = $.csv.toArrays('http://staging.chickenstockapp.com/test.csv');
-console.log(result);
-
 
 }); // end document ready
 
