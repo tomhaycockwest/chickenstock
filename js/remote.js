@@ -14,29 +14,35 @@ function loadPrices() {
 
 loadPrices();
 
+var productType = 'b1150g';
+var freshFrozen = 'fresh';
 
 // Get the correct column from array
-$('.dropdown-menu li').click(function (e) {
+function getData() {
     var searchBy = '';
     var searchTwo = '';
-    var clickedOptionId = e.target.id;
+    var clickedOptionId = productType;
 
     switch (clickedOptionId) {
         case "b1150g":
             searchBy = 0;
-            searchTwo = 3;
+            fresh = 3;
+            frozen = 5;
             break;
         case "b1150g1350g":
             searchBy = 3;
-            searchTwo = 1;
+            fresh = 1;
+            frozen = 3;
             break;
         case "b1350g1550g":
             searchBy = 5;
-            searchTwo = 1;
+            fresh = 1;
+            frozen = 3;
             break;
         case "b1550g2000g":
             searchBy = 12;
-            searchTwo = 1;
+            fresh = 1;
+            frozen = 3;
             break;
         default:
     }
@@ -48,75 +54,74 @@ $('.dropdown-menu li').click(function (e) {
 
     var col2 = $.map(csv_as_array,function getCol2(value){
 
-            return value[searchTwo];
+            return value[fresh];
+        });
+
+    var col3 = $.map(csv_as_array,function getCol2(value){
+
+            return value[frozen];
         });
 
     console.log(col1);
     console.log(col2);
+    console.log(col3);
 
-
-    console.log(typeof col1[0]);
-    console.log(typeof col2[0]);
-
-
+    var weight = [];
     var date = [];
+    var mix = '';
+
+    // $('.active').attr('id');
+
+    // alert($('.fresh-frozen.active').attr('id'));
+
+
+
     for (i = 0; i < col1.length; i++) {
         var dateHyphenated = col1[i];
+        var weightString = parseInt(col2[i],10);
+        var frozenCost = parseInt(col3[i],10);
+        weight.push(weightString);
         // remove hyphen from date string
         var dateNoHyphen = dateHyphenated.split("-").join(" ");
         // push to new array
         date.push(dateNoHyphen);
-    }
 
-    var weight = [];
-    for (i = 0; i < col1.length; i++) {
-        // get item from weight array and convert string to integer
-        var weightString = parseInt(col2[i],10);
-        // push to new array
-        weight.push(weightString);
-    }
-    
-    console.log(date);
-    console.log(weight);
+        if (freshFrozen == 'fresh') {
 
-var all = [date,weight];
-var mix = [];
- for (var i = 0; all.length !== 0; i++) {
-     var j = 0;
-     while (j < all.length) {
-         if (i >= all[j].length) {
-             all.splice(j, 1);
-         } else {
-            // var combine = all[i];
-            // var combine2 = all[j];
-            // var combined = [combine + combine2];
-            // var split = combine.split(",").join(" ");
-           // console.log(combine);
-             mix.push(all[j][i]);
-             j += 1;
-         }
-     }
- }
+            mix += "[" + dateNoHyphen + "," + weightString + "]" + ",";
+
+        } else {
+
+            mix += "[" + dateNoHyphen + "," + frozenCost + "]" + ",";
+        }
+
+
+
+    }
 
 console.log(mix);
 
- // console.log(mix);
 
-    // console.log(plots);
+}
 
-    // // get first item from date array
-    // var dateHyphenated = col1[0];
 
-    // // remove hyphen from date string
-    // var date = dateHyphenated.split("-").join(" ");
-
-    // // get first item from weight array and convert string to integer
-    // var weight = parseInt(col2[0],10);
-
-    // // combine date and weight items into one object to parse to the graph
-    // var array = [["'" + date + "'" + "," + weight]];
-    // console.log(array);
+$('.dropdown-menu li').click(function (e) {
+    productType = e.target.id;
+    console.log(productType);
+    getData();
 });
+$('#fresh').click(function () {
+    freshFrozen = 'fresh';
+    console.log(freshFrozen);
+    getData();
+});
+$('#frozen').click(function () {
+    freshFrozen = 'frozen';
+    console.log(freshFrozen);
+    getData();
+});
+
+
 
     
 
