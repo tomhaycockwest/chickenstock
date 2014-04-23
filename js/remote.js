@@ -42,39 +42,39 @@ $(document).ready(function () {
                 break;
             case "b1550g2050g":
                 fresh = 6;
-                frozen =23;
+                frozen = 23;
                 break;
             case "r2050g2450g":
                 fresh = 7;
-                frozen =24;
+                frozen = 24;
                 break;
             case "r2450g":
                 fresh = 8;
-                frozen =25;
+                frozen = 25;
                 break;
             case "breast":
                 fresh = 9;
-                frozen =26;
+                frozen = 26;
                 break; 
             case "725kg":
                 fresh = 12;
-                frozen =29;
+                frozen = 29;
                 break; 
             case "725kg9kg":
                 fresh = 13;
-                frozen =30;
+                frozen = 30;
                 break; 
             case "9kg":
                 fresh = 14;
-                frozen =31;
+                frozen = 31;
                 break; 
             case "ducklingWeight":
                 fresh = 16;
-                frozen =33;
+                frozen = 33;
                 break; 
             case "gooseWeight":
                 fresh = 18;
-                frozen =35;
+                frozen = 35;
                 break;               
             default:
         }
@@ -161,7 +161,26 @@ $(document).ready(function () {
     $('#frozen').click(function () {
         frozenUpdate();
         renderGraph();
-
+    });
+    $('#chickenGraph').click(function () {
+        $('#chickenDropdown').addClass('active-dropdown').siblings().removeClass('active-dropdown');
+        productType = 'b1150g';
+        renderGraph();
+    });
+    $('#turkeyGraph').click(function () {
+        $('#turkeyDropdown').addClass('active-dropdown').siblings().removeClass('active-dropdown');
+        productType = '725kg';
+        renderGraph();
+    });
+    $('#ducklingGraph').click(function () {
+        $('#ducklingDropdown').addClass('active-dropdown').siblings().removeClass('active-dropdown');
+        productType = 'ducklingWeight';
+        renderGraph();
+    });
+    $('#gooseGraph').click(function () {
+        $('#gooseDropdown').addClass('active-dropdown').siblings().removeClass('active-dropdown');
+        productType = 'gooseWeight';
+        renderGraph();
     });
 
         // Graph Settings

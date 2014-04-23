@@ -18,16 +18,16 @@
 		</div>
 		<div class="sub-nav">
 			<ul id="sub-nav-items">
-			    <li class="sub-nav-item active"><a href="#">Chicken</a></li>
-			    <li class="sub-nav-item"><a href="#">Turkey</a></li>  
-			    <li class="sub-nav-item"><a href="#">Duckling</a></li>
-			    <li class="sub-nav-item"><a href="#">Goose</a></li>
+			    <li id="chickenGraph" class="sub-nav-item active"><a href="#">Chicken</a></li>
+			    <li id="turkeyGraph" class="sub-nav-item"><a  href="#">Turkey</a></li>  
+			    <li id="ducklingGraph" class="sub-nav-item"><a href="#">Duckling</a></li>
+			    <li id="gooseGraph" class="sub-nav-item"><a href="#">Goose</a></li>
 			</ul>
 		</div>
 		<div class="container">
 			<?php include 'about.php'; ?>
 			<div class="controls">
-				<div class="weight">
+				<div class="weight dropdown active-dropdown" id="chickenDropdown">
 				 	<button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
 						<span data-bind="label">Broilers &lt; 1,150g</span>
 					</button>
@@ -39,6 +39,14 @@
 						<li><a id="r2050g2450g" href="#">Roasters 2,050g &lt; 2,450g</a></li>
 						<li><a id="r2450g" href="#">Roasters &gt; 2,450g</a></li>
 						<li><a id="breast" href="#">Skinless Breast Fillets</a></li>
+					</ul>
+				</div>
+
+				<div class="weight dropdown" id="turkeyDropdown">
+				 	<button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+						<span data-bind="label">&lt; 7.25kg</span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
 						<li><a id="725kg" href="#">&lt; 7.25kg</a></li>
 						<li><a id="725kg9kg" href="#">7.25kg &gt; 9kg</a></li>
 						<li><a id="9kg" href="#">&gt; 9kg</a></li>
@@ -46,6 +54,25 @@
 						<li><a id="gooseWeight" href="#">All Weights</a></li>
 					</ul>
 				</div>
+
+				<div class="weight dropdown" id="ducklingDropdown">
+				 	<button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+						<span data-bind="label">All Weights</span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a id="ducklingWeight" href="#">All Weights</a></li>
+					</ul>
+				</div>
+
+				<div class="weight dropdown" id="gooseDropdown">
+				 	<button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+						<span data-bind="label">All Weights</span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a id="gooseWeight" href="#">All Weights</a></li>
+					</ul>
+				</div>
+				
 
 				<div class="fresh-frozen">
 				  <button type="button" id="fresh" class="btn btn-default active option">Fresh</button>

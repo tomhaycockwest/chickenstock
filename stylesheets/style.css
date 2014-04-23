@@ -7794,6 +7794,14 @@ div.jqplot-noData-container {
   padding-top: 25px;
   height: 800px; }
 
+/* line 7, ../sass/_graph.scss */
+.active-dropdown {
+  display: inline-block !important; }
+
+/* line 11, ../sass/_graph.scss */
+.dropdown {
+  display: none; }
+
 /* line 8, ../sass/_mixins.scss */
 .fresh-frozen,
 .scale {

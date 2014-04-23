@@ -4,25 +4,10 @@
 	height: 800px;
 }
 
-// .inner-container {
-//   	background: #c0c0c0;
-//   	height: 100%;
+.active-dropdown {
+	display: inline-block !important;
+}
 
-
- 
-// 	&:before {
-// 	  content: '';
-// 	  display: inline-block;
-// 	  height: 100%; 
-// 	  vertical-align: middle;
-	    
-// 	  /* For visualization 
-// 	  background: #808080; width: 5px;
-// 	  */
-// 	 }
- 
-// 	.graph-container {
-// 	  display: inline-block;
-// 	  vertical-align: middle;
-// 	 }
-// }
+.dropdown {
+	display: none;
+}
