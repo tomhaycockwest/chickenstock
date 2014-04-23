@@ -28,15 +28,23 @@
 			<?php include 'about.php'; ?>
 			<div class="controls">
 				<div class="weight">
-				  <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
-				    <span data-bind="label">Broilers &gt; 1,150g</span>
-				  </button>
-				  <ul class="dropdown-menu" role="menu">
-				  	<li><a id="b1150g" href="#">Broilers &gt; 1,150g</a></li>
-				    <li><a id="b1150g1350g" href="#">Broilers 1,150g &lt; 1,350g</a></li>
-				    <li><a id="b1350g1550g" href="#">Broilers 1,350g &lt; 1,550g</a></li>
-				    <li><a id="b1550g2000g" href="#">Broilers 1,550g &lt; 2,000g</a></li>
-				  </ul>
+				 	<button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+						<span data-bind="label">Broilers &lt; 1,150g</span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a id="b1150g" href="#">Broilers &lt; 1,150g</a></li>
+						<li><a id="b1150g1350g" href="#">Broilers 1,150g &lt; 1,350g</a></li>
+						<li><a id="b1350g1550g" href="#">Broilers 1,350g &lt; 1,550g</a></li>
+						<li><a id="b1550g2050g" href="#">Broilers 1,550g &lt; 2,050g</a></li>
+						<li><a id="r2050g2450g" href="#">Roasters 2,050g &lt; 2,450g</a></li>
+						<li><a id="r2450g" href="#">Roasters &gt; 2,450g</a></li>
+						<li><a id="breast" href="#">Skinless Breast Fillets</a></li>
+						<li><a id="725kg" href="#">&lt; 7.25kg</a></li>
+						<li><a id="725kg9kg" href="#">7.25kg &gt; 9kg</a></li>
+						<li><a id="9kg" href="#">&gt; 9kg</a></li>
+						<li><a id="ducklingWeight" href="#">All Weights</a></li>
+						<li><a id="gooseWeight" href="#">All Weights</a></li>
+					</ul>
 				</div>
 
 				<div class="fresh-frozen">

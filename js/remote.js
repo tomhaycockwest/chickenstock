@@ -23,37 +23,65 @@ $(document).ready(function () {
 
     // Get the correct column from array
     function getData() {
-        var searchBy = '';
+        var dateCol = 0;
         var searchTwo = '';
         var clickedOptionId = productType;
 
         switch (clickedOptionId) {
             case "b1150g":
-                searchBy = 0;
                 fresh = 3;
                 frozen = 20;
                 break;
             case "b1150g1350g":
-                searchBy = 0;
                 fresh = 4;
                 frozen = 21;
                 break;
             case "b1350g1550g":
-                searchBy = 0;
                 fresh = 5;
                 frozen = 22;
                 break;
-            case "b1550g2000g":
-                searchBy = 0;
+            case "b1550g2050g":
                 fresh = 6;
                 frozen =23;
                 break;
+            case "r2050g2450g":
+                fresh = 7;
+                frozen =24;
+                break;
+            case "r2450g":
+                fresh = 8;
+                frozen =25;
+                break;
+            case "breast":
+                fresh = 9;
+                frozen =26;
+                break; 
+            case "725kg":
+                fresh = 12;
+                frozen =29;
+                break; 
+            case "725kg9kg":
+                fresh = 13;
+                frozen =30;
+                break; 
+            case "9kg":
+                fresh = 14;
+                frozen =31;
+                break; 
+            case "ducklingWeight":
+                fresh = 16;
+                frozen =33;
+                break; 
+            case "gooseWeight":
+                fresh = 18;
+                frozen =35;
+                break;               
             default:
         }
 
         var col1 = $.map(csv_as_array,function getCol1(value){
 
-                return value[searchBy];
+                return value[dateCol];
             });
 
         var col2 = $.map(csv_as_array,function getCol2(value){
@@ -160,7 +188,7 @@ $(document).ready(function () {
                 plot1.destroy();
             }
 
-        plot1 = $.jqplot('graph', [twentyThirteen, twentyTwelve], {
+        plot1 = $.jqplot('graph', [twentyTwelve], {
             animate: true,
             textColor: '#42454f',
             gridPadding:{right:35},
