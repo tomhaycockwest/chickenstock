@@ -163,22 +163,24 @@ $(document).ready(function () {
         renderGraph();
     });
     $('#chickenGraph').click(function () {
-        $('#chickenDropdown').addClass('active-dropdown').siblings().removeClass('active-dropdown');
+        $('#chickenDropdown span').html('Broilers &lt; 1,150g');
+        $('#chickenDropdown').addClass('active-dropdown').siblings('.dropdown').removeClass('active-dropdown');
         productType = 'b1150g';
         renderGraph();
     });
     $('#turkeyGraph').click(function () {
-        $('#turkeyDropdown').addClass('active-dropdown').siblings().removeClass('active-dropdown');
+        $('#turkeyDropdown span').html('&lt; 7.25kg');
+        $('#turkeyDropdown').addClass('active-dropdown').siblings('.dropdown').removeClass('active-dropdown');
         productType = '725kg';
         renderGraph();
     });
     $('#ducklingGraph').click(function () {
-        $('#ducklingDropdown').addClass('active-dropdown').siblings().removeClass('active-dropdown');
+        $('#ducklingDropdown').addClass('active-dropdown').siblings('.dropdown').removeClass('active-dropdown');
         productType = 'ducklingWeight';
         renderGraph();
     });
     $('#gooseGraph').click(function () {
-        $('#gooseDropdown').addClass('active-dropdown').siblings().removeClass('active-dropdown');
+        $('#gooseDropdown').addClass('active-dropdown').siblings('.dropdown').removeClass('active-dropdown');
         productType = 'gooseWeight';
         renderGraph();
     });
@@ -276,6 +278,9 @@ $(document).ready(function () {
 
 
     }
+
+    renderGraph();
+
 });
 
 

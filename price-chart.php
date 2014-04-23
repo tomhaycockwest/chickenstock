@@ -50,8 +50,6 @@
 						<li><a id="725kg" href="#">&lt; 7.25kg</a></li>
 						<li><a id="725kg9kg" href="#">7.25kg &gt; 9kg</a></li>
 						<li><a id="9kg" href="#">&gt; 9kg</a></li>
-						<li><a id="ducklingWeight" href="#">All Weights</a></li>
-						<li><a id="gooseWeight" href="#">All Weights</a></li>
 					</ul>
 				</div>
 
