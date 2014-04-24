@@ -104,8 +104,8 @@
 							<li class="item">
 								<div class="item-container">	
 									<div class="name">All Weights</div>
-									<div id="freshpriceduckling" class="fresh-price">&pound;6.59</div>
-									<div id="frozenpriceduckling" class="frozen-price">&pound;6.59</div>
+									<div id="freshpriceduckling" class="fresh-price"></div>
+									<div id="frozenpriceduckling" class="frozen-price"></div>
 								</div>
 							</li>
 						</ul>
@@ -116,8 +116,8 @@
 							<li class="item">
 								<div class="item-container">	
 									<div class="name">All Weights</div>
-									<div id="freshpricegoose" class="fresh-price">&pound;6.59</div>
-									<div id="frozenpricegoose" class="frozen-price">&pound;6.59</div>
+									<div id="freshpricegoose" class="fresh-price"></div>
+									<div id="frozenpricegoose" class="frozen-price"></div>
 								</div>
 							</li>
 						</ul>

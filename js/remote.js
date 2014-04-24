@@ -60,6 +60,117 @@ if (csv_as_array [csv_as_array.length -1][20] > csv_as_array [csv_as_array.lengt
 } else {
     $('#frozenprice1150g').addClass('decrease');
 }
+if (csv_as_array [csv_as_array.length -1][4] > csv_as_array [csv_as_array.length -2][4]) {
+    $('#freshprice1150g1350g').addClass('increase');
+} else {
+    $('#freshprice1150g1350g').addClass('decrease');
+}
+if (csv_as_array [csv_as_array.length -1][21] > csv_as_array [csv_as_array.length -2][21]) {
+    $('#frozenprice1150g1350g').addClass('increase');
+} else {
+    $('#frozenprice1150g1350g').addClass('decrease');
+}
+if (csv_as_array [csv_as_array.length -1][5] > csv_as_array [csv_as_array.length -2][5]) {
+    $('#freshprice1350g1550g').addClass('increase');
+} else {
+    $('#freshprice1350g1550g').addClass('decrease');
+}
+if (csv_as_array [csv_as_array.length -1][22] > csv_as_array [csv_as_array.length -2][22]) {
+    $('#frozenprice1350g1550g').addClass('increase');
+} else {
+    $('#frozenprice1350g1550g').addClass('decrease');
+}
+if (csv_as_array [csv_as_array.length -1][6] > csv_as_array [csv_as_array.length -2][6]) {
+    $('#freshprice1550g2050g').addClass('increase');
+} else {
+    $('#freshprice1550g2050g').addClass('decrease');
+}
+if (csv_as_array [csv_as_array.length -1][23] > csv_as_array [csv_as_array.length -2][23]) {
+    $('#frozenprice1550g2050g').addClass('increase');
+} else {
+    $('#frozenprice1550g2050g').addClass('decrease');
+}
+if (csv_as_array [csv_as_array.length -1][7] > csv_as_array [csv_as_array.length -2][7]) {
+    $('#freshprice2050g2450g').addClass('increase');
+} else {
+    $('#freshprice2050g2450g').addClass('decrease');
+}
+if (csv_as_array [csv_as_array.length -1][24] > csv_as_array [csv_as_array.length -2][24]) {
+    $('#frozenprice2050g2450g').addClass('increase');
+} else {
+    $('#frozenprice2050g2450g').addClass('decrease');
+}
+if (csv_as_array [csv_as_array.length -1][8] > csv_as_array [csv_as_array.length -2][8]) {
+    $('#freshprice2450g').addClass('increase');
+} else {
+    $('#freshprice2450g').addClass('decrease');
+}
+if (csv_as_array [csv_as_array.length -1][25] > csv_as_array [csv_as_array.length -2][25]) {
+    $('#frozenprice2450g').addClass('increase');
+} else {
+    $('#frozenprice2450g').addClass('decrease');
+}
+if (csv_as_array [csv_as_array.length -1][9] > csv_as_array [csv_as_array.length -2][9]) {
+    $('#freshpricebreast').addClass('increase');
+} else {
+    $('#freshpricebreast').addClass('decrease');
+}
+if (csv_as_array [csv_as_array.length -1][26] > csv_as_array [csv_as_array.length -2][26]) {
+    $('#frozenpricebreast').addClass('increase');
+} else {
+    $('#frozenpricebreast').addClass('decrease');
+}
+if (csv_as_array [csv_as_array.length -1][12] > csv_as_array [csv_as_array.length -2][12]) {
+    $('#freshprice725kg').addClass('increase');
+} else {
+    $('#freshprice725kg').addClass('decrease');
+}
+if (csv_as_array [csv_as_array.length -1][29] > csv_as_array [csv_as_array.length -2][29]) {
+    $('#frozenprice725kg').addClass('increase');
+} else {
+    $('#frozenprice1150g').addClass('decrease');
+}
+if (csv_as_array [csv_as_array.length -1][13] > csv_as_array [csv_as_array.length -2][13]) {
+    $('#freshprice725kg9kg').addClass('increase');
+} else {
+    $('#freshprice725kg9kg').addClass('decrease');
+}
+if (csv_as_array [csv_as_array.length -1][30] > csv_as_array [csv_as_array.length -2][30]) {
+    $('#frozenprice725kg9kg').addClass('increase');
+} else {
+    $('#frozenprice725kg9kg').addClass('decrease');
+}
+if (csv_as_array [csv_as_array.length -1][14] > csv_as_array [csv_as_array.length -2][14]) {
+    $('#freshprice9kg').addClass('increase');
+} else {
+    $('#freshprice9kg').addClass('decrease');
+}
+if (csv_as_array [csv_as_array.length -1][31] > csv_as_array [csv_as_array.length -2][31]) {
+    $('#frozenprice9kg').addClass('increase');
+} else {
+    $('#frozenprice9kg').addClass('decrease');
+}
+if (csv_as_array [csv_as_array.length -1][16] > csv_as_array [csv_as_array.length -2][16]) {
+    $('#freshpriceduckling').addClass('increase');
+} else {
+    $('#freshpriceduckling').addClass('decrease');
+}
+if (csv_as_array [csv_as_array.length -1][20] > csv_as_array [csv_as_array.length -2][33]) {
+    $('#frozenpriceduckling').addClass('increase');
+} else {
+    $('#frozenpriceduckling').addClass('decrease');
+}
+if (csv_as_array [csv_as_array.length -1][18] > csv_as_array [csv_as_array.length -2][18]) {
+    $('#freshpricegoose').addClass('increase');
+} else {
+    $('#freshpricegoose').addClass('decrease');
+}
+if (csv_as_array [csv_as_array.length -1][35] > csv_as_array [csv_as_array.length -2][35]) {
+    $('#frozenpricegoose').addClass('increase');
+} else {
+    $('#frozenpricegoose').addClass('decrease');
+}
+
 
 
 $(document).ready(function () {
