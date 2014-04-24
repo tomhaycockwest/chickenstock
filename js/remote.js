@@ -12,10 +12,11 @@ function loadPrices() {
   });
 }
 
+// checks whether a number is returned in the case of out of season products
 function isANumber(valIn) {
-    if ( isNaN(valIn) == false ) {
+    if ( isNaN(valIn) === false ) {
      return (valIn);
-    } else { 
+    } else {
     return 0;
     }
 }
@@ -35,7 +36,9 @@ $(document).ready(function () {
     // Get the correct column from array
     function getData(cyear) {
         var dateCol = 0;
-        var searchTwo = '';
+        var fresh = '';
+        var frozen = '';
+
         var clickedOptionId = productType;
 
         switch (clickedOptionId) {
@@ -66,27 +69,27 @@ $(document).ready(function () {
             case "breast":
                 fresh = 9;
                 frozen = 26;
-                break; 
+                break;
             case "725kg":
                 fresh = 12;
                 frozen = 29;
-                break; 
+                break;
             case "725kg9kg":
                 fresh = 13;
                 frozen = 30;
-                break; 
+                break;
             case "9kg":
                 fresh = 14;
                 frozen = 31;
-                break; 
+                break;
             case "ducklingWeight":
                 fresh = 16;
                 frozen = 33;
-                break; 
+                break;
             case "gooseWeight":
                 fresh = 18;
                 frozen = 35;
-                break;               
+                break;
             default:
         }
 
@@ -125,10 +128,10 @@ $(document).ready(function () {
             // push to new array
             date.push(dateNoHyphen);
 
-            var dyear = "20" + dateHyphenated.substr(dateHyphenated.length - 2); 
+            var dyear = "20" + dateHyphenated.substr(dateHyphenated.length - 2);
 
-            if (dyear == cyear) {
-                if (freshFrozen == 'fresh') {
+            if (dyear === cyear) {
+                if (freshFrozen === 'fresh') {
 
                     mix[index][0] = dateNoHyphen.substr(0, dateNoHyphen.length -2) + '12';
                     mix[index][1] = weightString;
@@ -136,33 +139,18 @@ $(document).ready(function () {
 
                 } else {
 
-                    mix[index][0] = dateNoHyphen.substr(0, dateNoHyphen.length -2) + '12';;
+                    mix[index][0] = dateNoHyphen.substr(0, dateNoHyphen.length -2) + '12';
                     mix[index][1] = frozenCost;
                     index ++;
                 }
-
-
-            } else {
-                console.log('no year');
-
             }
-
-
-
         }
-
-        console.log(mix);
-
-
-        // mix = mix.substr(0, mix.length - 1);
         return mix;
-
     }
 
 
     $('.dropdown-menu li').click(function (e) {
         productType = e.target.id;
-        console.log(productType);
         renderGraph();
     });
     $('#fresh').click(function () {
@@ -197,19 +185,20 @@ $(document).ready(function () {
     });
 
         // Graph Settings
-        // var twentyTwelve =[['04 Jan 13',182], ['2013-01-09',143], ['2013-01-16 8:00AM',146], ['2013-01-23 8:00AM',150], ['2013-01-30 8:00AM',152], ['2013-02-06 8:00AM',153], ['2013-02-13 8:00AM',151], ['2013-02-20 8:00AM',152], ['2013-02-27 8:00AM',160], ['2013-03-06 8:00AM',162], ['2013-03-13 8:00AM',175], ['2013-03-20 8:00AM',172], ['2013-03-27 8:00AM',173], ['2013-04-03 8:00AM',165], ['2013-04-10 8:00AM',172], ['2013-04-17 8:00AM',166], ['2013-04-24 8:00AM',162], ['2013-05-01 8:00AM',163], ['2013-05-08 8:00AM',165], ['2013-05-15 8:00AM',161], ['2013-05-22 8:00AM',165], ['2013-05-29 8:00AM',165], ['2013-06-05 8:00AM',170], ['2013-06-12 8:00AM',165], ['2013-06-19 8:00AM',172], ['2013-06-26 8:00AM',176], ['2013-07-03 8:00AM',173], ['2013-07-10 8:00AM',178], ['2013-07-17 8:00AM',175], ['2013-07-24 8:00AM',167], ['2013-07-31 8:00AM',170], ['2013-08-07 8:00AM',175], ['2013-08-14 8:00AM',169], ['2013-08-21 8:00AM',170], ['2013-08-28 8:00AM',165], ['2013-09-04 8:00AM',162], ['2013-09-11 8:00AM',168], ['2013-09-18 8:00AM',161], ['2013-09-25 8:00AM',160], ['2013-10-02 8:00AM',158], ['2013-10-09 8:00AM',155], ['2013-10-16 8:00AM',152], ['2013-10-23 8:00AM',150], ['2013-10-30 8:00AM',155], ['2013-11-06 8:00AM',155], ['2013-11-13 8:00AM',155], ['2013-11-20 8:00AM',155], ['2013-11-27 8:00AM',152], ['2013-12-04 8:00AM',158], ['2013-12-11 8:00AM',142], ['2013-12-18 8:00AM',148], ['2013-12-25 8:00AM',146]];
-        // var twentyThirteen =[['2013-01-02 8:00AM',144], ['2013-01-09 8:00AM',146], ['2013-01-16 8:00AM',148], ['2013-01-23 8:00AM',148], ['2013-01-30 8:00AM',150], ['2013-02-06 8:00AM',150], ['2013-02-13 8:00AM',150], ['2013-02-20 8:00AM',152], ['2013-02-27 8:00AM',160], ['2013-03-06 8:00AM',165], ['2013-03-13 8:00AM',170], ['2013-03-20 8:00AM',170], ['2013-03-27 8:00AM',170], ['2013-04-03 8:00AM',168], ['2013-04-10 8:00AM',170], ['2013-04-17 8:00AM',165], ['2013-04-24 8:00AM',160], ['2013-05-01 8:00AM',160], ['2013-05-08 8:00AM',160], ['2013-05-15 8:00AM',160], ['2013-05-22 8:00AM',165], ['2013-05-29 8:00AM',165], ['2013-06-05 8:00AM',168], ['2013-06-12 8:00AM',170], ['2013-06-19 8:00AM',172], ['2013-06-26 8:00AM',172], ['2013-07-03 8:00AM',175], ['2013-07-10 8:00AM',175], ['2013-07-17 8:00AM',175], ['2013-07-24 8:00AM',170], ['2013-07-31 8:00AM',170], ['2013-08-07 8:00AM',172], ['2013-08-14 8:00AM',170], ['2013-08-21 8:00AM',170], ['2013-08-28 8:00AM',170], ['2013-09-04 8:00AM',168], ['2013-09-11 8:00AM',168], ['2013-09-18 8:00AM',165], ['2013-09-25 8:00AM',160], ['2013-10-02 8:00AM',152], ['2013-10-09 8:00AM',148], ['2013-10-16 8:00AM',145], ['2013-10-23 8:00AM',150], ['2013-10-30 8:00AM',155], ['2013-11-06 8:00AM',155], ['2013-11-13 8:00AM',155], ['2013-11-20 8:00AM',155], ['2013-11-27 8:00AM',152], ['2013-12-04 8:00AM',155], ['2013-12-11 8:00AM',145], ['2013-12-18 8:00AM',145], ['2013-12-25 8:00AM',148]];
         var seriesOptions = [
-                    // twentyThirteen
                     {
-                        label: '2013',
+                        label:currentYear,
                         color:'#bf4423',
                         shadow: false
                     },
                     {
-                    // twentyTwelve
-                        label:'2012',
+                        label:lyear,
                         color:'#fd881b',
+                        shadow: false
+                    },
+                    {
+                        label:yearBeforeLast,
+                        color:'#ff0',
                         shadow: false
                     }
                 ];
@@ -257,58 +246,45 @@ $(document).ready(function () {
 
     function freshUpdate() {
         seriesOptions = [
-                        // twentyThirteen
                         {
                             label:currentYear,
                             color:'#bf4423',
                             shadow: false
                         },
                         {
-                        // twentyTwelve
                             label:lyear,
                             color:'#fd881b',
                             shadow: false
                         },
                         {
-                        // twentyTwelve
                             label:yearBeforeLast,
                             color:'#ff0',
                             shadow: false
                         }
                     ];
         freshFrozen = 'fresh';
-        console.log(freshFrozen);
-
-
     }
 
     function frozenUpdate() {
         seriesOptions = [
-                        // twentyThirteen
                         {
                             label:currentYear,
                             color:'#0c5888',
                             shadow: false
                         },
                         {
-                        // twentyTwelve
                             label:lyear,
                             color:'#0084d8',
                             shadow: false
                         },
                         {
-                        // twentyTwelve
                             label:yearBeforeLast,
                             color:'#ff0',
                             shadow: false
                         }
                     ];
         freshFrozen = 'frozen';
-        console.log(freshFrozen);
-
-
     }
-    freshUpdate();
     renderGraph();
 
 });
