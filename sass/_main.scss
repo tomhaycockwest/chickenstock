@@ -106,9 +106,24 @@
 							text-align: center;
 						}
 
-						.price {
+						.fresh-price {
 							position: absolute;
 							top: 63px;
+							right: 40px;
+
+							@media (min-device-width : 320px) and (max-device-width : 480px) {
+								top: 25px;
+								right: 10px!important;
+							}
+
+							@media screen and (max-width: 1200px) {
+								right: 80px;
+							}
+						}
+
+						.frozen-price {
+							position: absolute;
+							top: 85px;
 							right: 40px;
 
 							@media (min-device-width : 320px) and (max-device-width : 480px) {
