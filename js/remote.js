@@ -21,65 +21,22 @@ function isANumber(valIn) {
     }
 }
 
-function lastPrices(row) {
-    var lasttwo = csv_as_array.slice(Math.max(csv_as_array.length - 2, 1));
-    var price = lasttwo[row];
-
-    return price;
-}
-
-
-
 loadPrices();
-var lastprice = lastPrices(0);
-var currentprice = lastPrices(1);
-
-var list = $('.price').first();
-extractResult(lastprice);
-
-function extractResult(result){     
-    jQuery.each(result, function(index, value) {
-        // create a LI for each iteration and append to the UL
-        $("<div />", {text: value}).appendTo(list);
-    });
-}
-
-// var counter = 0;
-// $('.price').text(lastprice[ansstring]);
 
 
-// for (counter=0; counter < lastprice.length; counter++) {
-//     var ansstring = $.map(lastprice[counter], function (value) {
-//         return '<div class="price">' + value + '</div>'
-//     }).join('');
-//     $('.price').html(ansstring);
-
-//     counter++;
-// } 
-
-// for (i=0; i<lastprice.length; i++) {
-//     var item = lastprice[i];
-//     console.log(item);
-//     // var element = $('<div>'+i+'</div>');
-//     // elements = elements.add('<div>'+lastprice[i]+'</div>');
-// }
-
-// $('.price').first().text(lastprice[0]);
-
-
-
-
-
-
-// for (i = 0; i < lastprice.length; i++) {
-//     var ansstring = $.map(lastprice[i], function (value) {
-//         return '<div class="price">' + value + '</div>'
-//     }).join('');
-//     $('.price').html(ansstring);
-
-//     console.log(ansstring);
-// }
-
+// $('#freshprice1150g').text(csv_as_array [csv_as_array.length -1][3] + ',' + csv_as_array [csv_as_array.length -1][20]);
+$('#price1150g').html(csv_as_array [csv_as_array.length -1][3] + '<br>' + csv_as_array [csv_as_array.length -1][20]);
+$('#price1150g1350g').html(csv_as_array [csv_as_array.length -1][4] + '<br>' + csv_as_array [csv_as_array.length -1][21]);
+$('#price1350g1550g').html(csv_as_array [csv_as_array.length -1][5] + '<br>' + csv_as_array [csv_as_array.length -1][22]);
+$('#price1550g2050g').html(csv_as_array [csv_as_array.length -1][6] + '<br>' + csv_as_array [csv_as_array.length -1][23]);
+$('#price2050g2450g').html(csv_as_array [csv_as_array.length -1][7] + '<br>' + csv_as_array [csv_as_array.length -1][24]);
+$('#price2450g').html(csv_as_array [csv_as_array.length -1][8] + '<br>' + csv_as_array [csv_as_array.length -1][25]);
+$('#pricebreast').html(csv_as_array [csv_as_array.length -1][9] + '<br>' + csv_as_array [csv_as_array.length -1][26]);
+$('#price725kg').html(csv_as_array [csv_as_array.length -1][12] + '<br>' + csv_as_array [csv_as_array.length -1][29]);
+$('#price725kg9kg').html(csv_as_array [csv_as_array.length -1][13] + '<br>' + csv_as_array [csv_as_array.length -1][30]);
+$('#9kg').html(csv_as_array [csv_as_array.length -1][14] + '<br>' + csv_as_array [csv_as_array.length -1][31]);
+$('#priceduckling').html(csv_as_array [csv_as_array.length -1][16] + '<br>' + csv_as_array [csv_as_array.length -1][33]);
+$('#pricegoose').html(csv_as_array [csv_as_array.length -1][18] + '<br>' + csv_as_array [csv_as_array.length -1][35]);
 
 
 $(document).ready(function () {

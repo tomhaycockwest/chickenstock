@@ -23,50 +23,44 @@
 						<ul class="item-list">
 							<li class="item">
 								<div class="item-container">	
-									<div class="name">Broilers</div>
-									<div class="weight">1,150g</div>
-									<div class="price decrease">&pound;6.59</div>
+									<div class="name">Broilers &lt; 1,150g</div>
+									<div id="price1150g" class="price decrease"></div>
 								</div>
 							</li>
 							<li class="item">
 								<div class="item-container">	
-									<div class="name">Broilers</div>
-									<div class="weight">1,150g &lt; 1,350g</div>
-									<div class="price decrease">&pound;2.30</div>
+									<div class="name">Broilers 1,150g &lt; 1,350g</div>
+									<div id="price1150g1350g" class="price decrease"></div>
 								</div>
 							</li>
 							<li class="item">
 								<div class="item-container">	
-									<div class="name">Broilers</div>
-									<div class="weight">1,350g &lt; 1,550g</div>
-									<div class="price increase">&pound;7.11</div>
+									<div class="name">Broilers 1,350g &lt; 1,550g</div>
+									<div id="price1350g1550g" class="price increase"></div>
 								</div>
 							</li>
 							<li class="item">
 								<div class="item-container">	
-									<div class="name">Broilers</div>
-									<div class="weight">1,150g &lt; 2,050g</div>
-									<div class="price increase">&pound;3.89</div>
+									<div class="name">Broilers 1,550g &lt; 2,050g</div>
+									<div id="price1550g2050g" class="price increase"></div>
 								</div>
 							</li>
 							<li class="item">
 								<div class="item-container">	
-									<div class="name">Roasters</div>
-									<div class="weight">2,050g &lt; 2,450g</div>
-									<div class="price decrease">&pound;4.61</div>
+									<div class="name">Roasters 2,050g &lt; 2,450g</div>
+									<div id="price2050g2450g" class="price decrease"></div>
 								</div>
 							</li>
 							<li class="item">
 								<div class="item-container">	
-									<div class="name">Roasters</div>
-									<div class="weight">2,450g &gt;</div>
-									<div class="price decrease">&pound;7.11</div>
+									<div class="name">Roasters &gt; 2,450g</div>
+									<div id="price2450g" class="price decrease"></div>
 								</div>
 							</li>
 							<li class="item">
 								<div class="item-container">	
 									<div class="name">Skinless Breast Fillets</div>
-									<div class="price increase">&pound;2.12</div>
+									<div id="pricebreast" class="price increase"></div>
 								</div>
 							</li>
 						</ul>
@@ -76,30 +70,20 @@
 						<ul class="item-list">
 							<li class="item">
 								<div class="item-container">	
-									<div class="name">Broilers</div>
-									<div class="weight">1,150g</div>
-									<div class="price decrease">&pound;6.59</div>
+									<div class="name">&lt; 7.25kg</div>
+									<div id="price725kg" class="price decrease"></div>
 								</div>
 							</li>
 							<li class="item">
 								<div class="item-container">	
-									<div class="name">Broilers</div>
-									<div class="weight">1,150g &lt; 1,350g</div>
-									<div class="price decrease">&pound;2.30</div>
+									<div class="name">7.25kg &gt; 9kg</div>
+									<div id="price725kg9kg" class="price decrease"></div>
 								</div>
 							</li>
 							<li class="item">
 								<div class="item-container">	
-									<div class="name">Broilers</div>
-									<div class="weight">1,350g &lt; 1,550g</div>
-									<div class="price increase">&pound;7.11</div>
-								</div>
-							</li>
-							<li class="item">
-								<div class="item-container">	
-									<div class="name">Broilers</div>
-									<div class="weight">1,150g &lt; 2,050g</div>
-									<div class="price increase">&pound;3.89</div>
+									<div class="name">&gt; 9kg</div>
+									<div id="9kg" class="price increase"></div>
 								</div>
 							</li>
 						</ul>
@@ -109,9 +93,8 @@
 						<ul class="item-list">
 							<li class="item">
 								<div class="item-container">	
-									<div class="name">Broilers</div>
-									<div class="weight">1,150g</div>
-									<div class="price decrease">&pound;6.59</div>
+									<div class="name">All Weights</div>
+									<div id="priceduckling" class="price decrease">&pound;6.59</div>
 								</div>
 							</li>
 						</ul>
@@ -121,9 +104,8 @@
 						<ul class="item-list">
 							<li class="item">
 								<div class="item-container">	
-									<div class="name">Broilers</div>
-									<div class="weight">1,150g</div>
-									<div class="price decrease">&pound;6.59</div>
+									<div class="name">All Weights</div>
+									<div id="pricegoose" class="price decrease">&pound;6.59</div>
 
 
 								</div>
