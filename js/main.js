@@ -22,6 +22,8 @@ $(document).ready(function(){
 		});
 	});
 
+	
+
 	// Toggle Dropdown Menu
 	$('.dropdown-toggle').dropdown();
 
