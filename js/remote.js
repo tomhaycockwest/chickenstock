@@ -21,7 +21,66 @@ function isANumber(valIn) {
     }
 }
 
+function lastPrices(row) {
+    var lasttwo = csv_as_array.slice(Math.max(csv_as_array.length - 2, 1));
+    var price = lasttwo[row];
+
+    return price;
+}
+
+
+
 loadPrices();
+var lastprice = lastPrices(0);
+var currentprice = lastPrices(1);
+
+var list = $('.price').first();
+extractResult(lastprice);
+
+function extractResult(result){     
+    jQuery.each(result, function(index, value) {
+        // create a LI for each iteration and append to the UL
+        $("<div />", {text: value}).appendTo(list);
+    });
+}
+
+// var counter = 0;
+// $('.price').text(lastprice[ansstring]);
+
+
+// for (counter=0; counter < lastprice.length; counter++) {
+//     var ansstring = $.map(lastprice[counter], function (value) {
+//         return '<div class="price">' + value + '</div>'
+//     }).join('');
+//     $('.price').html(ansstring);
+
+//     counter++;
+// } 
+
+// for (i=0; i<lastprice.length; i++) {
+//     var item = lastprice[i];
+//     console.log(item);
+//     // var element = $('<div>'+i+'</div>');
+//     // elements = elements.add('<div>'+lastprice[i]+'</div>');
+// }
+
+// $('.price').first().text(lastprice[0]);
+
+
+
+
+
+
+// for (i = 0; i < lastprice.length; i++) {
+//     var ansstring = $.map(lastprice[i], function (value) {
+//         return '<div class="price">' + value + '</div>'
+//     }).join('');
+//     $('.price').html(ansstring);
+
+//     console.log(ansstring);
+// }
+
+
 
 $(document).ready(function () {
 
