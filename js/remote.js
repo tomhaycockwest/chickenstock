@@ -242,8 +242,13 @@ $(document).ready(function () {
                 tickOptions:{formatString:'%b'},
                 min:'Jan, 2012',
                 tickInterval:'1 month',
-                }
+                },
+
             },
+            highlighter: {
+                   show: true,
+                   sizeAdjust: 10,
+                 },
             series: seriesOptions,
         });
     }
