@@ -54,7 +54,8 @@
 			.title {
 				display: block;
 				margin: 0 10px 0 10px;
-				@include background-image(linear-gradient(top bottom, #b64221, #873119));
+				background-image: -moz-linear-gradient(top,  #b64221,  #873119);
+				background: -webkit-gradient(linear, left top, left bottom, from(#b64221), to(#873119));
 				text-align: center;
 				height: 35px;
 				padding-top: 7px;
@@ -66,6 +67,8 @@
 
 				@media (min-device-width : 320px) and (max-device-width : 480px) {
 					display: none;
+
+
 				}
 			}
 
@@ -74,7 +77,7 @@
 
 				li.item {
 					width: 100%;
-					display: table;
+					display: block;
 					height: 150px;
 					border-bottom: solid 1px $border;
 
@@ -86,7 +89,7 @@
 					.item-container {
 						width: 100%;
 						position: relative;
-						display: table-cell;
+						display: block;
 						vertical-align: middle;
 						text-align: center;
 
