@@ -1,3 +1,9 @@
 <div id="aboutContainer">
-	<div id="about"><button type="button" class="close" aria-hidden="true">&times;</button><h3>Chicken Stock</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt nulla est, et convallis massa molestie id. Nam posuere, urna sit amet volutpat tempor, justo ipsum ultricies dui, id lacinia odio velit eget lectus. Quisque at cursus dolor. Ut consectetur magna libero, a pretium mi tristique non. Nam vel pharetra enim, et pellentesque ipsum. Ut viverra ipsum massa, aliquam ullamcorper ligula cursus id. In ut lacus mauris. Proin urna est, auctor ac dictum eget, pulvinar nec eros. Fusce tempor suscipit felis, et tincidunt erat. Etiam venenatis odio vitae ligula dapibus, id euismod eros consectetur.</p></div>
+	<div id="about">
+		<button type="button" class="close" aria-hidden="true">&times;</button>
+		<h3>Chicken Stock</h3>
+		<p>Chicken Stock is an online tool that allows catering butchers to check the latest wholesale poultry prices at Smithfield Market. This web app allows users to access live prices from a desktop, tablet or mobile device, giving users the opportunity to buy the best quality poultry at competitive prices. Use the overview page to view the latest prices in the market. Select the price chart page to check the current prices against previous years.</p>
+		
+		<p id="source">Data Source: <a href="https://www.gov.uk/government/statistical-data-sets/commodity-prices" target="_BLANK">DEFRA</a></p>
+	</div>
 </div>
