@@ -46,6 +46,8 @@
 			display: block;
 			border-right: solid 2px $border;
 
+
+
 			@media screen and (max-width: 1200px) {
 				margin:0 auto;
 			}
@@ -103,6 +105,11 @@
 							@media (min-device-width : 320px) and (max-device-width : 480px) {
 								top: 25px;
 								left: 10px;
+								font-size: 14px;
+							}
+
+							@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+								font-size: 19px;
 							}
 						}
 
@@ -115,10 +122,17 @@
 							top: 63px;
 							right: 47px;
 							color: #eaeaea;
+							font-size: 16px;
 
 							@media (min-device-width : 320px) and (max-device-width : 480px) {
 								top: 25px;
 								right: 18px!important;
+								font-size: 14px;
+							}
+
+							@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+								font-size: 19px;
+								right: 90px!important;
 							}
 
 							@media screen and (max-width: 1200px) {
@@ -131,10 +145,16 @@
 							top: 85px;
 							right: 40px;
 							color: #eaeaea;
+							font-size: 16px;
 
 							@media (min-device-width : 320px) and (max-device-width : 480px) {
 								top: 46px;
 								right: 10px!important;
+								font-size: 14px;
+							}
+
+							@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+								font-size: 19px;
 							}
 
 							@media screen and (max-width: 1200px) {
@@ -146,11 +166,18 @@
 						.fresh-price {
 							position: absolute;
 							top: 63px;
-							right: 94px;
+							right: 96px;
+							font-size: 16px;
 
 							@media (min-device-width : 320px) and (max-device-width : 480px) {
 								top: 25px;
 								right: 62px!important;
+								font-size: 14px;
+							}
+
+							@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+								font-size: 19px;
+								right: 145px!important;
 							}
 
 							@media screen and (max-width: 1200px) {
@@ -161,11 +188,18 @@
 						.frozen-price {
 							position: absolute;
 							top: 85px;
-							right: 94px;
+							right: 96px;
+							font-size: 16px;
 
 							@media (min-device-width : 320px) and (max-device-width : 480px) {
 								top: 46px;
 								right: 62px!important;
+								font-size: 14px;
+							}
+
+							@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+								font-size: 19px;
+								right: 145px!important;
 							}
 
 							@media screen and (max-width: 1200px) {

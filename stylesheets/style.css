@@ -7984,7 +7984,7 @@ div.jqplot-noData-container {
         /* line 44, ../sass/_main.scss */
         #wrapper .container .column {
           margin: 0 auto; } }
-      /* line 54, ../sass/_main.scss */
+      /* line 56, ../sass/_main.scss */
       #wrapper .container .column .title {
         display: block;
         margin: 0 10px 0 10px;
@@ -7997,103 +7997,135 @@ div.jqplot-noData-container {
         -moz-box-shadow: #1a1b1d 4px 4px 10px;
         box-shadow: #1a1b1d 4px 4px 10px; }
         @media screen and (max-width: 1200px) {
-          /* line 54, ../sass/_main.scss */
+          /* line 56, ../sass/_main.scss */
           #wrapper .container .column .title {
             margin: 0 50px 0 10px; } }
         @media (min-device-width: 320px) and (max-device-width: 480px) {
-          /* line 54, ../sass/_main.scss */
+          /* line 56, ../sass/_main.scss */
           #wrapper .container .column .title {
             display: none; } }
-      /* line 75, ../sass/_main.scss */
+      /* line 77, ../sass/_main.scss */
       #wrapper .container .column ul.item-list {
         width: 100%; }
-        /* line 78, ../sass/_main.scss */
+        /* line 80, ../sass/_main.scss */
         #wrapper .container .column ul.item-list li.item {
           width: 100%;
           display: block;
           height: 150px;
           border-bottom: solid 1px #2a2c31; }
           @media (min-device-width: 320px) and (max-device-width: 480px) {
-            /* line 78, ../sass/_main.scss */
+            /* line 80, ../sass/_main.scss */
             #wrapper .container .column ul.item-list li.item {
               height: 70px; } }
-          /* line 89, ../sass/_main.scss */
+          /* line 91, ../sass/_main.scss */
           #wrapper .container .column ul.item-list li.item .item-container {
             width: 100%;
             position: relative;
             display: block;
             vertical-align: middle;
             text-align: center; }
-            /* line 97, ../sass/_main.scss */
+            /* line 99, ../sass/_main.scss */
             #wrapper .container .column ul.item-list li.item .item-container .name {
               position: absolute;
               left: 40px;
               top: 63px;
               color: #eaeaea; }
               @media (min-device-width: 320px) and (max-device-width: 480px) {
-                /* line 97, ../sass/_main.scss */
+                /* line 99, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .name {
                   top: 25px;
-                  left: 10px; } }
-            /* line 109, ../sass/_main.scss */
+                  left: 10px;
+                  font-size: 14px; } }
+              @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+                /* line 99, ../sass/_main.scss */
+                #wrapper .container .column ul.item-list li.item .item-container .name {
+                  font-size: 19px; } }
+            /* line 116, ../sass/_main.scss */
             #wrapper .container .column ul.item-list li.item .item-container .weight {
               text-align: center; }
-            /* line 113, ../sass/_main.scss */
+            /* line 120, ../sass/_main.scss */
             #wrapper .container .column ul.item-list li.item .item-container .fresh-label {
               position: absolute;
               top: 63px;
               right: 47px;
-              color: #eaeaea; }
+              color: #eaeaea;
+              font-size: 16px; }
               @media (min-device-width: 320px) and (max-device-width: 480px) {
-                /* line 113, ../sass/_main.scss */
+                /* line 120, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .fresh-label {
                   top: 25px;
-                  right: 18px !important; } }
+                  right: 18px !important;
+                  font-size: 14px; } }
+              @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+                /* line 120, ../sass/_main.scss */
+                #wrapper .container .column ul.item-list li.item .item-container .fresh-label {
+                  font-size: 19px;
+                  right: 90px !important; } }
               @media screen and (max-width: 1200px) {
-                /* line 113, ../sass/_main.scss */
+                /* line 120, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .fresh-label {
                   right: 80px; } }
-            /* line 129, ../sass/_main.scss */
+            /* line 143, ../sass/_main.scss */
             #wrapper .container .column ul.item-list li.item .item-container .frozen-label {
               position: absolute;
               top: 85px;
               right: 40px;
-              color: #eaeaea; }
+              color: #eaeaea;
+              font-size: 16px; }
               @media (min-device-width: 320px) and (max-device-width: 480px) {
-                /* line 129, ../sass/_main.scss */
+                /* line 143, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .frozen-label {
                   top: 46px;
-                  right: 10px !important; } }
+                  right: 10px !important;
+                  font-size: 14px; } }
+              @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+                /* line 143, ../sass/_main.scss */
+                #wrapper .container .column ul.item-list li.item .item-container .frozen-label {
+                  font-size: 19px; } }
               @media screen and (max-width: 1200px) {
-                /* line 129, ../sass/_main.scss */
+                /* line 143, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .frozen-label {
                   right: 80px; } }
-            /* line 146, ../sass/_main.scss */
+            /* line 166, ../sass/_main.scss */
             #wrapper .container .column ul.item-list li.item .item-container .fresh-price {
               position: absolute;
               top: 63px;
-              right: 94px; }
+              right: 96px;
+              font-size: 16px; }
               @media (min-device-width: 320px) and (max-device-width: 480px) {
-                /* line 146, ../sass/_main.scss */
+                /* line 166, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .fresh-price {
                   top: 25px;
-                  right: 62px !important; } }
+                  right: 62px !important;
+                  font-size: 14px; } }
+              @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+                /* line 166, ../sass/_main.scss */
+                #wrapper .container .column ul.item-list li.item .item-container .fresh-price {
+                  font-size: 19px;
+                  right: 145px !important; } }
               @media screen and (max-width: 1200px) {
-                /* line 146, ../sass/_main.scss */
+                /* line 166, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .fresh-price {
                   right: 80px; } }
-            /* line 161, ../sass/_main.scss */
+            /* line 188, ../sass/_main.scss */
             #wrapper .container .column ul.item-list li.item .item-container .frozen-price {
               position: absolute;
               top: 85px;
-              right: 94px; }
+              right: 96px;
+              font-size: 16px; }
               @media (min-device-width: 320px) and (max-device-width: 480px) {
-                /* line 161, ../sass/_main.scss */
+                /* line 188, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .frozen-price {
                   top: 46px;
-                  right: 62px !important; } }
+                  right: 62px !important;
+                  font-size: 14px; } }
+              @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+                /* line 188, ../sass/_main.scss */
+                #wrapper .container .column ul.item-list li.item .item-container .frozen-price {
+                  font-size: 19px;
+                  right: 145px !important; } }
               @media screen and (max-width: 1200px) {
-                /* line 161, ../sass/_main.scss */
+                /* line 188, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .frozen-price {
                   right: 80px; } }
 

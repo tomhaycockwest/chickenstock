@@ -7,7 +7,13 @@ $(function() {
 });
 
 $(document).ready(function(){
+	$('.option').click(function() {
+			var page = $(this).attr('href');
+			$('.row').load(page);
+			setTimeout(function(){updatePrices();}, 500);
+			return false;
 
+		});
 
 	// Control Settings
 
