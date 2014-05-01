@@ -83,7 +83,7 @@
 
 
 					@media (min-device-width : 320px) and (max-device-width : 480px) {
-						height: 77px;
+						height: 70px;
 					}
 
 					.item-container {
@@ -98,6 +98,7 @@
 							position: absolute;
 							left: 40px;
 							top: 63px;
+							color: #eaeaea;
 
 							@media (min-device-width : 320px) and (max-device-width : 480px) {
 								top: 25px;
@@ -109,14 +110,47 @@
 							text-align: center;
 						}
 
-						.fresh-price {
+						.fresh-label {
 							position: absolute;
 							top: 63px;
-							right: 40px;
+							right: 47px;
+							color: #eaeaea;
 
 							@media (min-device-width : 320px) and (max-device-width : 480px) {
 								top: 25px;
+								right: 18px!important;
+							}
+
+							@media screen and (max-width: 1200px) {
+								right: 80px;
+							}
+						}
+
+						.frozen-label {
+							position: absolute;
+							top: 85px;
+							right: 40px;
+							color: #eaeaea;
+
+							@media (min-device-width : 320px) and (max-device-width : 480px) {
+								top: 46px;
 								right: 10px!important;
+							}
+
+							@media screen and (max-width: 1200px) {
+								right: 80px;
+							}
+
+						}
+
+						.fresh-price {
+							position: absolute;
+							top: 63px;
+							right: 94px;
+
+							@media (min-device-width : 320px) and (max-device-width : 480px) {
+								top: 25px;
+								right: 62px!important;
 							}
 
 							@media screen and (max-width: 1200px) {
@@ -127,16 +161,17 @@
 						.frozen-price {
 							position: absolute;
 							top: 85px;
-							right: 40px;
+							right: 94px;
 
 							@media (min-device-width : 320px) and (max-device-width : 480px) {
-								top: 25px;
-								right: 10px!important;
+								top: 46px;
+								right: 62px!important;
 							}
 
 							@media screen and (max-width: 1200px) {
 								right: 80px;
 							}
+
 						}
 					}
 				}

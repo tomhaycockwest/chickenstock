@@ -25,50 +25,65 @@
 							<ul class="item-list">
 								<li class="item">
 									<div class="item-container">	
-										<div class="name">Broilers</div>
-										<div class="weight">1,150g</div>
-										<div class="price decrease">&pound;6.59</div>
+									<div class="name">Broilers &lt; 1,150g</div>
+									<div id="freshprice1150g" class="fresh-price"></div>
+									<div id="frozenprice1150g" class="frozen-price"></div>
+									<div class="fresh-label">Fresh</div>
+									<div class="frozen-label">Frozen</div>
 									</div>
 								</li>
 								<li class="item">
 									<div class="item-container">	
-										<div class="name">Broilers</div>
-										<div class="weight">1,150g &lt; 1,350g</div>
-										<div class="price decrease">&pound;2.30</div>
+										<div class="name">Broilers 1,150g &lt; 1,350g</div>
+										<div id="freshprice1150g1350g" class="fresh-price"></div>
+										<div id="frozenprice1150g1350g" class="frozen-price"></div>
+										<div class="fresh-label">Fresh</div>
+										<div class="frozen-label">Frozen</div>
 									</div>
 								</li>
 								<li class="item">
 									<div class="item-container">	
-										<div class="name">Broilers</div>
-										<div class="weight">1,350g &lt; 1,550g</div>
-										<div class="price increase">&pound;7.11</div>
+										<div class="name">Broilers 1,350g &lt; 1,550g</div>
+										<div id="freshprice1350g1550g" class="fresh-price"></div>
+										<div id="frozenprice1350g1550g" class="frozen-price"></div>
+										<div class="fresh-label">Fresh</div>
+										<div class="frozen-label">Frozen</div>
 									</div>
 								</li>
 								<li class="item">
 									<div class="item-container">	
-										<div class="name">Broilers</div>
-										<div class="weight">1,150g &lt; 2,050g</div>
-										<div class="price increase">&pound;3.89</div>
+										<div class="name">Broilers 1,550g &lt; 2,050g</div>
+										<div id="freshprice1550g2050g" class="fresh-price"></div>
+										<div id="frozenprice1550g2050g" class="frozen-price"></div>
+										<div class="fresh-label">Fresh</div>
+										<div class="frozen-label">Frozen</div>
 									</div>
 								</li>
 								<li class="item">
 									<div class="item-container">	
-										<div class="name">Roasters</div>
-										<div class="weight">2,050g &lt; 2,450g</div>
-										<div class="price decrease">&pound;4.61</div>
+										<div class="name">Roasters 2,050g &lt; 2,450g</div>
+										<div id="freshprice2050g2450g" class="fresh-price"></div>
+										<div id="frozenprice2050g2450g" class="frozen-price"></div>
+										<div class="fresh-label">Fresh</div>
+										<div class="frozen-label">Frozen</div>
 									</div>
 								</li>
 								<li class="item">
 									<div class="item-container">	
-										<div class="name">Roasters</div>
-										<div class="weight">2,450g &gt;</div>
-										<div class="price decrease">&pound;7.11</div>
+										<div class="name">Roasters &gt; 2,450g</div>
+										<div id="freshprice2450g" class="fresh-price"></div>
+										<div id="frozenprice2450g" class="frozen-price"></div>
+										<div class="fresh-label">Fresh</div>
+										<div class="frozen-label">Frozen</div>
 									</div>
 								</li>
 								<li class="item">
 									<div class="item-container">	
 										<div class="name">Skinless Breast Fillets</div>
-										<div class="price increase">&pound;2.12</div>
+										<div id="freshpricebreast" class="fresh-price"></div>
+										<div id="frozenpricebreast" class="frozen-price"></div>
+										<div class="fresh-label">Fresh</div>
+										<div class="frozen-label">Frozen</div>
 									</div>
 								</li>
 							</ul>

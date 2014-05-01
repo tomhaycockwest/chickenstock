@@ -8016,7 +8016,7 @@ div.jqplot-noData-container {
           @media (min-device-width: 320px) and (max-device-width: 480px) {
             /* line 78, ../sass/_main.scss */
             #wrapper .container .column ul.item-list li.item {
-              height: 77px; } }
+              height: 70px; } }
           /* line 89, ../sass/_main.scss */
           #wrapper .container .column ul.item-list li.item .item-container {
             width: 100%;
@@ -8028,41 +8028,72 @@ div.jqplot-noData-container {
             #wrapper .container .column ul.item-list li.item .item-container .name {
               position: absolute;
               left: 40px;
-              top: 63px; }
+              top: 63px;
+              color: #eaeaea; }
               @media (min-device-width: 320px) and (max-device-width: 480px) {
                 /* line 97, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .name {
                   top: 25px;
                   left: 10px; } }
-            /* line 108, ../sass/_main.scss */
+            /* line 109, ../sass/_main.scss */
             #wrapper .container .column ul.item-list li.item .item-container .weight {
               text-align: center; }
-            /* line 112, ../sass/_main.scss */
+            /* line 113, ../sass/_main.scss */
+            #wrapper .container .column ul.item-list li.item .item-container .fresh-label {
+              position: absolute;
+              top: 63px;
+              right: 47px;
+              color: #eaeaea; }
+              @media (min-device-width: 320px) and (max-device-width: 480px) {
+                /* line 113, ../sass/_main.scss */
+                #wrapper .container .column ul.item-list li.item .item-container .fresh-label {
+                  top: 25px;
+                  right: 18px !important; } }
+              @media screen and (max-width: 1200px) {
+                /* line 113, ../sass/_main.scss */
+                #wrapper .container .column ul.item-list li.item .item-container .fresh-label {
+                  right: 80px; } }
+            /* line 129, ../sass/_main.scss */
+            #wrapper .container .column ul.item-list li.item .item-container .frozen-label {
+              position: absolute;
+              top: 85px;
+              right: 40px;
+              color: #eaeaea; }
+              @media (min-device-width: 320px) and (max-device-width: 480px) {
+                /* line 129, ../sass/_main.scss */
+                #wrapper .container .column ul.item-list li.item .item-container .frozen-label {
+                  top: 46px;
+                  right: 10px !important; } }
+              @media screen and (max-width: 1200px) {
+                /* line 129, ../sass/_main.scss */
+                #wrapper .container .column ul.item-list li.item .item-container .frozen-label {
+                  right: 80px; } }
+            /* line 146, ../sass/_main.scss */
             #wrapper .container .column ul.item-list li.item .item-container .fresh-price {
               position: absolute;
               top: 63px;
-              right: 40px; }
+              right: 94px; }
               @media (min-device-width: 320px) and (max-device-width: 480px) {
-                /* line 112, ../sass/_main.scss */
+                /* line 146, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .fresh-price {
                   top: 25px;
-                  right: 10px !important; } }
+                  right: 62px !important; } }
               @media screen and (max-width: 1200px) {
-                /* line 112, ../sass/_main.scss */
+                /* line 146, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .fresh-price {
                   right: 80px; } }
-            /* line 127, ../sass/_main.scss */
+            /* line 161, ../sass/_main.scss */
             #wrapper .container .column ul.item-list li.item .item-container .frozen-price {
               position: absolute;
               top: 85px;
-              right: 40px; }
+              right: 94px; }
               @media (min-device-width: 320px) and (max-device-width: 480px) {
-                /* line 127, ../sass/_main.scss */
+                /* line 161, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .frozen-price {
-                  top: 25px;
-                  right: 10px !important; } }
+                  top: 46px;
+                  right: 62px !important; } }
               @media screen and (max-width: 1200px) {
-                /* line 127, ../sass/_main.scss */
+                /* line 161, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .frozen-price {
                   right: 80px; } }
 
