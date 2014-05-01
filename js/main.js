@@ -10,19 +10,19 @@ $(document).ready(function(){
 	$('.option').click(function() {
 			var page = $(this).attr('href');
 			$('.row').load(page);
+			setTimeout(function(){updatePrices();}, 500);
 			return false;
+
 		});
 
 	// Control Settings
 
-	// Move Active Class
+	// Mobile Nav Selector
 	$(function() {
-		$(".option").click( function() {
-		$(this).addClass('active').siblings().removeClass('active');
-		});
+	    $(".option").click( function() {
+	    $(this).addClass('active').siblings().removeClass('active');
+	    });
 	});
-
-	
 
 	// Toggle Dropdown Menu
 	$('.dropdown-toggle').dropdown();
