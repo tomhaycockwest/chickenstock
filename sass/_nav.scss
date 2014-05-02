@@ -56,13 +56,19 @@
 	z-index: 9501;
 }
 
+.active {
+	color: $orange !important;
+	background-color: $containerbg !important;
+	border-color: #313542 !important;
+	border-top: none;
+}
 
 
 .mobile {
 	padding: 6px 15.6px;
-	color: white !important;
-	background-color: $orange !important;
-	border-color: #313542 !important;
+	color: white;
+	background-color: $orange;
+	border-color: #313542;
 	border-left-width: 2px;
 	border-right-width: 2px;	
 

@@ -7861,28 +7861,35 @@ div.jqplot-noData-container {
   width: 100%;
   z-index: 9501; }
 
-/* line 61, ../sass/_nav.scss */
+/* line 59, ../sass/_nav.scss */
+.active {
+  color: #bf4423 !important;
+  background-color: #28292c !important;
+  border-color: #313542 !important;
+  border-top: none; }
+
+/* line 67, ../sass/_nav.scss */
 .mobile {
   padding: 6px 15.6px;
-  color: white !important;
-  background-color: #bf4423 !important;
-  border-color: #313542 !important;
+  color: white;
+  background-color: #bf4423;
+  border-color: #313542;
   border-left-width: 2px;
   border-right-width: 2px; }
-  /* line 69, ../sass/_nav.scss */
+  /* line 75, ../sass/_nav.scss */
   .mobile:first-child {
     border-left: none; }
-  /* line 73, ../sass/_nav.scss */
+  /* line 79, ../sass/_nav.scss */
   .mobile:last-child {
     border-right: none; }
-  /* line 78, ../sass/_nav.scss */
+  /* line 84, ../sass/_nav.scss */
   .mobile:active, .mobile:hover {
     color: #bf4423 !important;
     background-color: #28292c !important;
     border-color: #313542 !important;
     border-top: none; }
 
-/* line 89, ../sass/_nav.scss */
+/* line 95, ../sass/_nav.scss */
 #chicken .chicken,
 #turkey .turkey,
 #duckling .duckling,

@@ -18,11 +18,11 @@ $(document).ready(function(){
 	// Control Settings
 
 	// Mobile Nav Selector
-	$(function() {
-	    $(".option").click( function() {
-	    $(this).addClass('active').siblings().removeClass('active');
-	    });
-	});
+    $(".option").click( function() {
+    $(this).addClass('active').siblings().removeClass('active');
+    });
+
+    $('.chicken').button('toggle');
 
 	// Toggle Dropdown Menu
 	$('.dropdown-toggle').dropdown();
