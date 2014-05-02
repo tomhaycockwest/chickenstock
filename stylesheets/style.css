@@ -7791,14 +7791,13 @@ div.jqplot-noData-container {
 /* line 1, ../sass/_graph.scss */
 .graph-container {
   margin-left: 125px;
-  padding-top: 25px;
-  height: 800px; }
+  padding-top: 25px; }
 
-/* line 7, ../sass/_graph.scss */
+/* line 6, ../sass/_graph.scss */
 .active-dropdown {
   display: inline-block !important; }
 
-/* line 11, ../sass/_graph.scss */
+/* line 10, ../sass/_graph.scss */
 .dropdown {
   display: none; }
 
@@ -7866,15 +7865,27 @@ div.jqplot-noData-container {
   left: -2px;
   width: 100%;
   z-index: 9501; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    /* line 59, ../sass/_nav.scss */
+    .mobile-nav {
+      position: fixed;
+      top: 0;
+      left: 350px; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* line 59, ../sass/_nav.scss */
+    .mobile-nav {
+      position: fixed;
+      top: 0;
+      left: 250px; } }
 
-/* line 67, ../sass/_nav.scss */
+/* line 79, ../sass/_nav.scss */
 .active {
   color: #bf4423 !important;
   background-color: #28292c !important;
   border-color: #313542 !important;
   border-top: none; }
 
-/* line 75, ../sass/_nav.scss */
+/* line 87, ../sass/_nav.scss */
 .mobile {
   padding: 6px 15.6px;
   color: white;
@@ -7882,20 +7893,20 @@ div.jqplot-noData-container {
   border-color: #313542;
   border-left-width: 2px;
   border-right-width: 2px; }
-  /* line 83, ../sass/_nav.scss */
+  /* line 95, ../sass/_nav.scss */
   .mobile:first-child {
     border-left: none; }
-  /* line 87, ../sass/_nav.scss */
+  /* line 99, ../sass/_nav.scss */
   .mobile:last-child {
     border-right: none; }
-  /* line 92, ../sass/_nav.scss */
+  /* line 104, ../sass/_nav.scss */
   .mobile:active, .mobile:hover {
     color: #bf4423 !important;
     background-color: #28292c !important;
     border-color: #313542 !important;
     border-top: none; }
 
-/* line 103, ../sass/_nav.scss */
+/* line 115, ../sass/_nav.scss */
 #chicken .chicken,
 #turkey .turkey,
 #duckling .duckling,
@@ -7904,6 +7915,24 @@ div.jqplot-noData-container {
   background-color: #28292c !important;
   border-color: #313542 !important;
   border-top: none; }
+
+/* line 122, ../sass/_nav.scss */
+.tree {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px; }
+
+/* line 161, ../sass/_nav.scss */
+.tree li.parent_li > span {
+  cursor: pointer; }
+
+/* line 164, ../sass/_nav.scss */
+.tree > ul > li::before, .tree > ul > li::after {
+  border: 0; }
+
+/* line 167, ../sass/_nav.scss */
+.tree li:last-child::before {
+  height: 30px; }
 
 /* line 1, ../sass/_sub-nav.scss */
 .sub-nav {
@@ -7955,13 +7984,19 @@ div.jqplot-noData-container {
   bottom: 0;
   left: 0;
   overflow: hidden; }
-  /* line 11, ../sass/_main.scss */
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    /* line 1, ../sass/_main.scss */
+    #wrapper {
+      position: fixed;
+      bottom: 0;
+      height: 672px !important; } }
+  /* line 18, ../sass/_main.scss */
   #wrapper .increase {
-    color: #9a0d0d; }
-  /* line 15, ../sass/_main.scss */
+    color: #9a0d0d !important; }
+  /* line 22, ../sass/_main.scss */
   #wrapper .decrease {
-    color: #418004; }
-  /* line 19, ../sass/_main.scss */
+    color: #418004 !important; }
+  /* line 26, ../sass/_main.scss */
   #wrapper .container {
     background: #28292c;
     position: absolute;
@@ -7976,177 +8011,156 @@ div.jqplot-noData-container {
     -moz-box-shadow: #1f2022 -2px 0px 9px;
     box-shadow: #1f2022 -2px 0px 9px; }
     @media screen and (min-width: 1950px) {
-      /* line 19, ../sass/_main.scss */
+      /* line 26, ../sass/_main.scss */
       #wrapper .container {
         width: 97%; } }
     @media screen and (max-width: 1200px) {
-      /* line 19, ../sass/_main.scss */
+      /* line 26, ../sass/_main.scss */
       #wrapper .container {
         overflow: auto; } }
     @media (min-device-width: 320px) and (max-device-width: 480px) {
-      /* line 19, ../sass/_main.scss */
+      /* line 26, ../sass/_main.scss */
       #wrapper .container {
         left: 0;
         width: 100%; } }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-      /* line 19, ../sass/_main.scss */
+      /* line 26, ../sass/_main.scss */
       #wrapper .container {
         position: absolute;
         bottom: 0;
         height: 672px !important; } }
-    /* line 51, ../sass/_main.scss */
-    #wrapper .container .column {
-      color: white;
+    /* line 58, ../sass/_main.scss */
+    #wrapper .container .title {
       display: block;
-      border-right: solid 2px #2a2c31; }
+      margin: 0 10px 0 10px;
+      background-image: -moz-linear-gradient(top, #b64221, #873119);
+      background: -webkit-gradient(linear, left top, left bottom, from(#b64221), to(#873119));
+      text-align: center;
+      height: 35px;
+      padding-top: 7px;
+      color: #eaeaea;
+      -webkit-box-shadow: #1a1b1d 4px 4px 10px;
+      -moz-box-shadow: #1a1b1d 4px 4px 10px;
+      box-shadow: #1a1b1d 4px 4px 10px; }
       @media screen and (max-width: 1200px) {
-        /* line 51, ../sass/_main.scss */
-        #wrapper .container .column {
-          margin: 0 auto; } }
-      /* line 63, ../sass/_main.scss */
-      #wrapper .container .column .title {
+        /* line 58, ../sass/_main.scss */
+        #wrapper .container .title {
+          margin: 0 50px 0 10px; } }
+      @media (min-device-width: 320px) and (max-device-width: 480px) {
+        /* line 58, ../sass/_main.scss */
+        #wrapper .container .title {
+          display: none; } }
+    /* line 80, ../sass/_main.scss */
+    #wrapper .container ul.item-list {
+      width: 100%; }
+      /* line 83, ../sass/_main.scss */
+      #wrapper .container ul.item-list li.item {
+        width: 100%;
         display: block;
-        margin: 0 10px 0 10px;
-        background-image: -moz-linear-gradient(top, #b64221, #873119);
-        background: -webkit-gradient(linear, left top, left bottom, from(#b64221), to(#873119));
-        text-align: center;
-        height: 35px;
-        padding-top: 7px;
-        -webkit-box-shadow: #1a1b1d 4px 4px 10px;
-        -moz-box-shadow: #1a1b1d 4px 4px 10px;
-        box-shadow: #1a1b1d 4px 4px 10px; }
-        @media screen and (max-width: 1200px) {
-          /* line 63, ../sass/_main.scss */
-          #wrapper .container .column .title {
-            margin: 0 50px 0 10px; } }
+        height: 150px;
+        border-bottom: solid 1px #2a2c31; }
         @media (min-device-width: 320px) and (max-device-width: 480px) {
-          /* line 63, ../sass/_main.scss */
-          #wrapper .container .column .title {
-            display: none; } }
-      /* line 84, ../sass/_main.scss */
-      #wrapper .container .column ul.item-list {
-        width: 100%; }
-        /* line 87, ../sass/_main.scss */
-        #wrapper .container .column ul.item-list li.item {
+          /* line 83, ../sass/_main.scss */
+          #wrapper .container ul.item-list li.item {
+            height: 70px; } }
+        /* line 94, ../sass/_main.scss */
+        #wrapper .container ul.item-list li.item .item-container {
           width: 100%;
+          position: relative;
           display: block;
-          height: 150px;
-          border-bottom: solid 1px #2a2c31; }
-          @media (min-device-width: 320px) and (max-device-width: 480px) {
-            /* line 87, ../sass/_main.scss */
-            #wrapper .container .column ul.item-list li.item {
-              height: 70px; } }
-          /* line 98, ../sass/_main.scss */
-          #wrapper .container .column ul.item-list li.item .item-container {
-            width: 100%;
-            position: relative;
-            display: block;
-            vertical-align: middle;
+          vertical-align: middle;
+          text-align: center; }
+          /* line 102, ../sass/_main.scss */
+          #wrapper .container ul.item-list li.item .item-container .name {
+            position: absolute;
+            left: 40px;
+            top: 63px;
+            color: #eaeaea; }
+            @media (min-device-width: 320px) and (max-device-width: 480px) {
+              /* line 102, ../sass/_main.scss */
+              #wrapper .container ul.item-list li.item .item-container .name {
+                top: 25px;
+                left: 10px;
+                font-size: 14px; } }
+            @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+              /* line 102, ../sass/_main.scss */
+              #wrapper .container ul.item-list li.item .item-container .name {
+                font-size: 19px; } }
+          /* line 119, ../sass/_main.scss */
+          #wrapper .container ul.item-list li.item .item-container .weight {
             text-align: center; }
-            /* line 106, ../sass/_main.scss */
-            #wrapper .container .column ul.item-list li.item .item-container .name {
-              position: absolute;
-              left: 40px;
-              top: 63px;
-              color: #eaeaea; }
-              @media (min-device-width: 320px) and (max-device-width: 480px) {
-                /* line 106, ../sass/_main.scss */
-                #wrapper .container .column ul.item-list li.item .item-container .name {
-                  top: 25px;
-                  left: 10px;
-                  font-size: 14px; } }
-              @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-                /* line 106, ../sass/_main.scss */
-                #wrapper .container .column ul.item-list li.item .item-container .name {
-                  font-size: 19px; } }
-            /* line 123, ../sass/_main.scss */
-            #wrapper .container .column ul.item-list li.item .item-container .weight {
-              text-align: center; }
-            /* line 127, ../sass/_main.scss */
-            #wrapper .container .column ul.item-list li.item .item-container .fresh-label {
-              position: absolute;
-              top: 63px;
-              right: 47px;
-              color: #eaeaea;
-              font-size: 16px; }
-              @media (min-device-width: 320px) and (max-device-width: 480px) {
-                /* line 127, ../sass/_main.scss */
-                #wrapper .container .column ul.item-list li.item .item-container .fresh-label {
-                  top: 25px;
-                  right: 18px !important;
-                  font-size: 14px; } }
-              @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-                /* line 127, ../sass/_main.scss */
-                #wrapper .container .column ul.item-list li.item .item-container .fresh-label {
-                  font-size: 19px;
-                  right: 90px !important; } }
-              @media screen and (max-width: 1200px) {
-                /* line 127, ../sass/_main.scss */
-                #wrapper .container .column ul.item-list li.item .item-container .fresh-label {
-                  right: 80px; } }
-            /* line 150, ../sass/_main.scss */
-            #wrapper .container .column ul.item-list li.item .item-container .frozen-label {
-              position: absolute;
-              top: 85px;
-              right: 40px;
-              color: #eaeaea;
-              font-size: 16px; }
-              @media (min-device-width: 320px) and (max-device-width: 480px) {
-                /* line 150, ../sass/_main.scss */
-                #wrapper .container .column ul.item-list li.item .item-container .frozen-label {
-                  top: 46px;
-                  right: 10px !important;
-                  font-size: 14px; } }
-              @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-                /* line 150, ../sass/_main.scss */
-                #wrapper .container .column ul.item-list li.item .item-container .frozen-label {
-                  font-size: 19px; } }
-              @media screen and (max-width: 1200px) {
-                /* line 150, ../sass/_main.scss */
-                #wrapper .container .column ul.item-list li.item .item-container .frozen-label {
-                  right: 80px; } }
-            /* line 173, ../sass/_main.scss */
-            #wrapper .container .column ul.item-list li.item .item-container .fresh-price {
-              position: absolute;
-              top: 63px;
-              right: 96px;
-              font-size: 16px; }
-              @media (min-device-width: 320px) and (max-device-width: 480px) {
-                /* line 173, ../sass/_main.scss */
-                #wrapper .container .column ul.item-list li.item .item-container .fresh-price {
-                  top: 25px;
-                  right: 62px !important;
-                  font-size: 14px; } }
-              @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-                /* line 173, ../sass/_main.scss */
-                #wrapper .container .column ul.item-list li.item .item-container .fresh-price {
-                  font-size: 19px;
-                  right: 145px !important; } }
-              @media screen and (max-width: 1200px) {
-                /* line 173, ../sass/_main.scss */
-                #wrapper .container .column ul.item-list li.item .item-container .fresh-price {
-                  right: 80px; } }
-            /* line 195, ../sass/_main.scss */
-            #wrapper .container .column ul.item-list li.item .item-container .frozen-price {
-              position: absolute;
-              top: 85px;
-              right: 96px;
-              font-size: 16px; }
-              @media (min-device-width: 320px) and (max-device-width: 480px) {
-                /* line 195, ../sass/_main.scss */
-                #wrapper .container .column ul.item-list li.item .item-container .frozen-price {
-                  top: 46px;
-                  right: 62px !important;
-                  font-size: 14px; } }
-              @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-                /* line 195, ../sass/_main.scss */
-                #wrapper .container .column ul.item-list li.item .item-container .frozen-price {
-                  font-size: 19px;
-                  right: 145px !important; } }
-              @media screen and (max-width: 1200px) {
-                /* line 195, ../sass/_main.scss */
-                #wrapper .container .column ul.item-list li.item .item-container .frozen-price {
-                  right: 80px; } }
+          /* line 123, ../sass/_main.scss */
+          #wrapper .container ul.item-list li.item .item-container .fresh-label {
+            position: absolute;
+            top: 63px;
+            right: 47px;
+            color: #eaeaea;
+            font-size: 16px; }
+            @media (min-device-width: 320px) and (max-device-width: 480px) {
+              /* line 123, ../sass/_main.scss */
+              #wrapper .container ul.item-list li.item .item-container .fresh-label {
+                top: 25px;
+                right: 18px !important;
+                font-size: 14px; } }
+            @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+              /* line 123, ../sass/_main.scss */
+              #wrapper .container ul.item-list li.item .item-container .fresh-label {
+                font-size: 19px;
+                right: 90px !important; } }
+          /* line 146, ../sass/_main.scss */
+          #wrapper .container ul.item-list li.item .item-container .frozen-label {
+            position: absolute;
+            top: 85px;
+            right: 40px;
+            color: #eaeaea;
+            font-size: 16px; }
+            @media (min-device-width: 320px) and (max-device-width: 480px) {
+              /* line 146, ../sass/_main.scss */
+              #wrapper .container ul.item-list li.item .item-container .frozen-label {
+                top: 46px;
+                right: 10px !important;
+                font-size: 14px; } }
+            @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+              /* line 146, ../sass/_main.scss */
+              #wrapper .container ul.item-list li.item .item-container .frozen-label {
+                font-size: 19px;
+                right: 80px !important; } }
+          /* line 170, ../sass/_main.scss */
+          #wrapper .container ul.item-list li.item .item-container .fresh-price {
+            position: absolute;
+            top: 63px;
+            right: 96px;
+            font-size: 16px;
+            color: #eaeaea; }
+            @media (min-device-width: 320px) and (max-device-width: 480px) {
+              /* line 170, ../sass/_main.scss */
+              #wrapper .container ul.item-list li.item .item-container .fresh-price {
+                top: 25px;
+                right: 62px !important;
+                font-size: 14px; } }
+            @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+              /* line 170, ../sass/_main.scss */
+              #wrapper .container ul.item-list li.item .item-container .fresh-price {
+                font-size: 19px;
+                right: 145px !important; } }
+          /* line 193, ../sass/_main.scss */
+          #wrapper .container ul.item-list li.item .item-container .frozen-price {
+            position: absolute;
+            top: 85px;
+            right: 96px;
+            font-size: 16px;
+            color: #eaeaea; }
+            @media (min-device-width: 320px) and (max-device-width: 480px) {
+              /* line 193, ../sass/_main.scss */
+              #wrapper .container ul.item-list li.item .item-container .frozen-price {
+                top: 46px;
+                right: 62px !important;
+                font-size: 14px; } }
+            @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+              /* line 193, ../sass/_main.scss */
+              #wrapper .container ul.item-list li.item .item-container .frozen-price {
+                font-size: 19px;
+                right: 145px !important; } }
 
 /* line 3, ../sass/_components.scss */
 .btn-default {

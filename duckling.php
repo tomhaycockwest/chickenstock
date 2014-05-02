@@ -1,6 +1,5 @@
 <div id="duckling">
 	<div class="col-lg-3 column">
-		<div class="title">Duckling</div>
 		<ul class="item-list">
 			<li class="item">
 				<div class="item-container">	
@@ -13,5 +12,4 @@
 			</li>
 		</ul>
 	</div>
-	<?php include 'mobile-nav.php'; ?>
 </div>

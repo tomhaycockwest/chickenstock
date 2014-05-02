@@ -8,12 +8,19 @@
 	left: 0;
 	overflow: hidden;
 
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+		position: fixed;
+		bottom: 0;
+		height: 672px !important;
+	}
+
+
 	.increase {
-		color: $red;
+		color: $red!important;
 	}
 
 	.decrease {
-		color: $green;
+		color: $green!important;
 	}
 
 	.container {
@@ -48,175 +55,342 @@
 		}
 
 
-		.column {
-			color: white;
+		.title {
 			display: block;
-			border-right: solid 2px $border;
-
-
+			margin: 0 10px 0 10px;
+			background-image: -moz-linear-gradient(top,  #b64221,  #873119);
+			background: -webkit-gradient(linear, left top, left bottom, from(#b64221), to(#873119));
+			text-align: center;
+			height: 35px;
+			padding-top: 7px;
+			color: #eaeaea;
+			@include box-shadow(#1a1b1d 4px 4px 10px);
 
 			@media screen and (max-width: 1200px) {
-				margin:0 auto;
+				margin: 0 50px 0 10px;
 			}
 
+			@media (min-device-width : 320px) and (max-device-width : 480px) {
+				display: none;
 
-			.title {
+
+			}
+		}
+
+		ul.item-list {
+			width: 100%;
+
+			li.item {
+				width: 100%;
 				display: block;
-				margin: 0 10px 0 10px;
-				background-image: -moz-linear-gradient(top,  #b64221,  #873119);
-				background: -webkit-gradient(linear, left top, left bottom, from(#b64221), to(#873119));
-				text-align: center;
-				height: 35px;
-				padding-top: 7px;
-				@include box-shadow(#1a1b1d 4px 4px 10px);
+				height: 150px;
+				border-bottom: solid 1px $border;
 
-				@media screen and (max-width: 1200px) {
-					margin: 0 50px 0 10px;
-				}
 
 				@media (min-device-width : 320px) and (max-device-width : 480px) {
-					display: none;
-
-
+					height: 70px;
 				}
-			}
 
-			ul.item-list {
-				width: 100%;
-
-				li.item {
+				.item-container {
 					width: 100%;
+					position: relative;
 					display: block;
-					height: 150px;
-					border-bottom: solid 1px $border;
+					vertical-align: middle;
+					text-align: center;
 
 
-					@media (min-device-width : 320px) and (max-device-width : 480px) {
-						height: 70px;
+					.name {
+						position: absolute;
+						left: 40px;
+						top: 63px;
+						color: #eaeaea;
+
+						@media (min-device-width : 320px) and (max-device-width : 480px) {
+							top: 25px;
+							left: 10px;
+							font-size: 14px;
+						}
+
+						@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+							font-size: 19px;
+						}
 					}
 
-					.item-container {
-						width: 100%;
-						position: relative;
-						display: block;
-						vertical-align: middle;
+					.weight {
 						text-align: center;
+					}
 
+					.fresh-label {
+						position: absolute;
+						top: 63px;
+						right: 47px;
+						color: #eaeaea;
+						font-size: 16px;
 
-						.name {
-							position: absolute;
-							left: 40px;
-							top: 63px;
-							color: #eaeaea;
-
-							@media (min-device-width : 320px) and (max-device-width : 480px) {
-								top: 25px;
-								left: 10px;
-								font-size: 14px;
-							}
-
-							@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-								font-size: 19px;
-							}
+						@media (min-device-width : 320px) and (max-device-width : 480px) {
+							top: 25px;
+							right: 18px!important;
+							font-size: 14px;
 						}
 
-						.weight {
-							text-align: center;
+						@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+							font-size: 19px;
+							right: 90px!important;
 						}
 
-						.fresh-label {
-							position: absolute;
-							top: 63px;
-							right: 47px;
-							color: #eaeaea;
-							font-size: 16px;
+						// @media screen and (max-width: 1200px) {
+						// 	right: 80px;
+						// }
+					}
 
-							@media (min-device-width : 320px) and (max-device-width : 480px) {
-								top: 25px;
-								right: 18px!important;
-								font-size: 14px;
-							}
+					.frozen-label {
+						position: absolute;
+						top: 85px;
+						right: 40px;
+						color: #eaeaea;
+						font-size: 16px;
 
-							@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-								font-size: 19px;
-								right: 90px!important;
-							}
-
-							@media screen and (max-width: 1200px) {
-								right: 80px;
-							}
+						@media (min-device-width : 320px) and (max-device-width : 480px) {
+							top: 46px;
+							right: 10px!important;
+							font-size: 14px;
 						}
 
-						.frozen-label {
-							position: absolute;
-							top: 85px;
-							right: 40px;
-							color: #eaeaea;
-							font-size: 16px;
-
-							@media (min-device-width : 320px) and (max-device-width : 480px) {
-								top: 46px;
-								right: 10px!important;
-								font-size: 14px;
-							}
-
-							@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-								font-size: 19px;
-							}
-
-							@media screen and (max-width: 1200px) {
-								right: 80px;
-							}
-
+						@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+							font-size: 19px;
+							right: 80px!important;
 						}
 
-						.fresh-price {
-							position: absolute;
-							top: 63px;
-							right: 96px;
-							font-size: 16px;
+						// @media screen and (max-width: 1200px) {
+						// 	right: 80px;
+						// }
 
-							@media (min-device-width : 320px) and (max-device-width : 480px) {
-								top: 25px;
-								right: 62px!important;
-								font-size: 14px;
-							}
+					}
 
-							@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-								font-size: 19px;
-								right: 145px!important;
-							}
+					.fresh-price {
+						position: absolute;
+						top: 63px;
+						right: 96px;
+						font-size: 16px;
+						color: #eaeaea;
 
-							@media screen and (max-width: 1200px) {
-								right: 80px;
-							}
+						@media (min-device-width : 320px) and (max-device-width : 480px) {
+							top: 25px;
+							right: 62px!important;
+							font-size: 14px;
 						}
 
-						.frozen-price {
-							position: absolute;
-							top: 85px;
-							right: 96px;
-							font-size: 16px;
-
-							@media (min-device-width : 320px) and (max-device-width : 480px) {
-								top: 46px;
-								right: 62px!important;
-								font-size: 14px;
-							}
-
-							@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-								font-size: 19px;
-								right: 145px!important;
-							}
-
-							@media screen and (max-width: 1200px) {
-								right: 80px;
-							}
-
+						@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+							font-size: 19px;
+							right: 145px!important;
 						}
+
+						// @media screen and (max-width: 1200px) {
+						// 	right: 80px;
+						// }
+					}
+
+					.frozen-price {
+						position: absolute;
+						top: 85px;
+						right: 96px;
+						font-size: 16px;
+						color: #eaeaea;
+
+						@media (min-device-width : 320px) and (max-device-width : 480px) {
+							top: 46px;
+							right: 62px!important;
+							font-size: 14px;
+						}
+
+						@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+							font-size: 19px;
+							right: 145px!important;
+						}
+
+						// @media screen and (max-width: 1200px) {
+						// 	right: 80px;
+						// }
+
 					}
 				}
 			}
 		}
+
+
+
+		///////////////////////
+		
+
+		// .column {
+		// 	color: white;
+		// 	display: block;
+		// 	border-right: solid 2px $border;
+
+
+
+		// 	@media screen and (max-width: 1200px) {
+		// 		margin:0 auto;
+		// 	}
+
+
+		// 	.title {
+		// 		display: block;
+		// 		margin: 0 10px 0 10px;
+		// 		background-image: -moz-linear-gradient(top,  #b64221,  #873119);
+		// 		background: -webkit-gradient(linear, left top, left bottom, from(#b64221), to(#873119));
+		// 		text-align: center;
+		// 		height: 35px;
+		// 		padding-top: 7px;
+		// 		@include box-shadow(#1a1b1d 4px 4px 10px);
+
+		// 		@media screen and (max-width: 1200px) {
+		// 			margin: 0 50px 0 10px;
+		// 		}
+
+		// 		@media (min-device-width : 320px) and (max-device-width : 480px) {
+		// 			display: none;
+
+
+		// 		}
+		// 	}
+
+		// 	ul.item-list {
+		// 		width: 100%;
+
+		// 		li.item {
+		// 			width: 100%;
+		// 			display: block;
+		// 			height: 150px;
+		// 			border-bottom: solid 1px $border;
+
+
+		// 			@media (min-device-width : 320px) and (max-device-width : 480px) {
+		// 				height: 70px;
+		// 			}
+
+		// 			.item-container {
+		// 				width: 100%;
+		// 				position: relative;
+		// 				display: block;
+		// 				vertical-align: middle;
+		// 				text-align: center;
+
+
+		// 				.name {
+		// 					position: absolute;
+		// 					left: 40px;
+		// 					top: 63px;
+		// 					color: #eaeaea;
+
+		// 					@media (min-device-width : 320px) and (max-device-width : 480px) {
+		// 						top: 25px;
+		// 						left: 10px;
+		// 						font-size: 14px;
+		// 					}
+
+		// 					@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+		// 						font-size: 19px;
+		// 					}
+		// 				}
+
+		// 				.weight {
+		// 					text-align: center;
+		// 				}
+
+		// 				.fresh-label {
+		// 					position: absolute;
+		// 					top: 63px;
+		// 					right: 47px;
+		// 					color: #eaeaea;
+		// 					font-size: 16px;
+
+		// 					@media (min-device-width : 320px) and (max-device-width : 480px) {
+		// 						top: 25px;
+		// 						right: 18px!important;
+		// 						font-size: 14px;
+		// 					}
+
+		// 					@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+		// 						font-size: 19px;
+		// 						right: 90px!important;
+		// 					}
+
+		// 					@media screen and (max-width: 1200px) {
+		// 						right: 80px;
+		// 					}
+		// 				}
+
+		// 				.frozen-label {
+		// 					position: absolute;
+		// 					top: 85px;
+		// 					right: 40px;
+		// 					color: #eaeaea;
+		// 					font-size: 16px;
+
+		// 					@media (min-device-width : 320px) and (max-device-width : 480px) {
+		// 						top: 46px;
+		// 						right: 10px!important;
+		// 						font-size: 14px;
+		// 					}
+
+		// 					@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+		// 						font-size: 19px;
+		// 					}
+
+		// 					@media screen and (max-width: 1200px) {
+		// 						right: 80px;
+		// 					}
+
+		// 				}
+
+		// 				.fresh-price {
+		// 					position: absolute;
+		// 					top: 63px;
+		// 					right: 96px;
+		// 					font-size: 16px;
+
+		// 					@media (min-device-width : 320px) and (max-device-width : 480px) {
+		// 						top: 25px;
+		// 						right: 62px!important;
+		// 						font-size: 14px;
+		// 					}
+
+		// 					@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+		// 						font-size: 19px;
+		// 						right: 145px!important;
+		// 					}
+
+		// 					@media screen and (max-width: 1200px) {
+		// 						right: 80px;
+		// 					}
+		// 				}
+
+		// 				.frozen-price {
+		// 					position: absolute;
+		// 					top: 85px;
+		// 					right: 96px;
+		// 					font-size: 16px;
+
+		// 					@media (min-device-width : 320px) and (max-device-width : 480px) {
+		// 						top: 46px;
+		// 						right: 62px!important;
+		// 						font-size: 14px;
+		// 					}
+
+		// 					@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+		// 						font-size: 19px;
+		// 						right: 145px!important;
+		// 					}
+
+		// 					@media screen and (max-width: 1200px) {
+		// 						right: 80px;
+		// 					}
+
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+		// }
 	}
 }
