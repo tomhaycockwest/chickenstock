@@ -7820,21 +7820,20 @@ div.jqplot-noData-container {
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     /* line 1, ../sass/_nav.scss */
     .nav {
-      position: fixed;
+      position: absolute;
       bottom: 0;
-      width: 100%;
       height: 672px !important; } }
   @media (min-device-width: 320px) and (max-device-width: 480px) {
     /* line 1, ../sass/_nav.scss */
     .nav {
       display: none; } }
-  /* line 23, ../sass/_nav.scss */
+  /* line 22, ../sass/_nav.scss */
   .nav #logo {
     display: block;
     padding: 4px 0;
     cursor: auto;
     margin: 22px 0 0 22px; }
-  /* line 31, ../sass/_nav.scss */
+  /* line 30, ../sass/_nav.scss */
   .nav ul {
     display: block;
     list-style: none;
@@ -7842,12 +7841,12 @@ div.jqplot-noData-container {
     margin: 0;
     padding: 5px 0 0 0;
     text-align: center; }
-    /* line 39, ../sass/_nav.scss */
+    /* line 38, ../sass/_nav.scss */
     .nav ul li {
       display: block;
       padding: 10px 0 10px 8px;
       border-bottom: 1px solid #1f1f1f; }
-    /* line 45, ../sass/_nav.scss */
+    /* line 44, ../sass/_nav.scss */
     .nav ul .about-link {
       display: block;
       position: absolute;
@@ -7860,7 +7859,7 @@ div.jqplot-noData-container {
       border-bottom: none;
       border-top: 1px solid #1f1f1f; }
 
-/* line 60, ../sass/_nav.scss */
+/* line 59, ../sass/_nav.scss */
 .mobile-nav {
   position: absolute;
   bottom: -2px;
@@ -7868,14 +7867,14 @@ div.jqplot-noData-container {
   width: 100%;
   z-index: 9501; }
 
-/* line 68, ../sass/_nav.scss */
+/* line 67, ../sass/_nav.scss */
 .active {
   color: #bf4423 !important;
   background-color: #28292c !important;
   border-color: #313542 !important;
   border-top: none; }
 
-/* line 76, ../sass/_nav.scss */
+/* line 75, ../sass/_nav.scss */
 .mobile {
   padding: 6px 15.6px;
   color: white;
@@ -7883,20 +7882,20 @@ div.jqplot-noData-container {
   border-color: #313542;
   border-left-width: 2px;
   border-right-width: 2px; }
-  /* line 84, ../sass/_nav.scss */
+  /* line 83, ../sass/_nav.scss */
   .mobile:first-child {
     border-left: none; }
-  /* line 88, ../sass/_nav.scss */
+  /* line 87, ../sass/_nav.scss */
   .mobile:last-child {
     border-right: none; }
-  /* line 93, ../sass/_nav.scss */
+  /* line 92, ../sass/_nav.scss */
   .mobile:active, .mobile:hover {
     color: #bf4423 !important;
     background-color: #28292c !important;
     border-color: #313542 !important;
     border-top: none; }
 
-/* line 104, ../sass/_nav.scss */
+/* line 103, ../sass/_nav.scss */
 #chicken .chicken,
 #turkey .turkey,
 #duckling .duckling,
@@ -7989,16 +7988,22 @@ div.jqplot-noData-container {
       #wrapper .container {
         left: 0;
         width: 100%; } }
-    /* line 44, ../sass/_main.scss */
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+      /* line 19, ../sass/_main.scss */
+      #wrapper .container {
+        position: absolute;
+        bottom: 0;
+        height: 672px !important; } }
+    /* line 51, ../sass/_main.scss */
     #wrapper .container .column {
       color: white;
       display: block;
       border-right: solid 2px #2a2c31; }
       @media screen and (max-width: 1200px) {
-        /* line 44, ../sass/_main.scss */
+        /* line 51, ../sass/_main.scss */
         #wrapper .container .column {
           margin: 0 auto; } }
-      /* line 56, ../sass/_main.scss */
+      /* line 63, ../sass/_main.scss */
       #wrapper .container .column .title {
         display: block;
         margin: 0 10px 0 10px;
@@ -8011,53 +8016,53 @@ div.jqplot-noData-container {
         -moz-box-shadow: #1a1b1d 4px 4px 10px;
         box-shadow: #1a1b1d 4px 4px 10px; }
         @media screen and (max-width: 1200px) {
-          /* line 56, ../sass/_main.scss */
+          /* line 63, ../sass/_main.scss */
           #wrapper .container .column .title {
             margin: 0 50px 0 10px; } }
         @media (min-device-width: 320px) and (max-device-width: 480px) {
-          /* line 56, ../sass/_main.scss */
+          /* line 63, ../sass/_main.scss */
           #wrapper .container .column .title {
             display: none; } }
-      /* line 77, ../sass/_main.scss */
+      /* line 84, ../sass/_main.scss */
       #wrapper .container .column ul.item-list {
         width: 100%; }
-        /* line 80, ../sass/_main.scss */
+        /* line 87, ../sass/_main.scss */
         #wrapper .container .column ul.item-list li.item {
           width: 100%;
           display: block;
           height: 150px;
           border-bottom: solid 1px #2a2c31; }
           @media (min-device-width: 320px) and (max-device-width: 480px) {
-            /* line 80, ../sass/_main.scss */
+            /* line 87, ../sass/_main.scss */
             #wrapper .container .column ul.item-list li.item {
               height: 70px; } }
-          /* line 91, ../sass/_main.scss */
+          /* line 98, ../sass/_main.scss */
           #wrapper .container .column ul.item-list li.item .item-container {
             width: 100%;
             position: relative;
             display: block;
             vertical-align: middle;
             text-align: center; }
-            /* line 99, ../sass/_main.scss */
+            /* line 106, ../sass/_main.scss */
             #wrapper .container .column ul.item-list li.item .item-container .name {
               position: absolute;
               left: 40px;
               top: 63px;
               color: #eaeaea; }
               @media (min-device-width: 320px) and (max-device-width: 480px) {
-                /* line 99, ../sass/_main.scss */
+                /* line 106, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .name {
                   top: 25px;
                   left: 10px;
                   font-size: 14px; } }
               @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-                /* line 99, ../sass/_main.scss */
+                /* line 106, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .name {
                   font-size: 19px; } }
-            /* line 116, ../sass/_main.scss */
+            /* line 123, ../sass/_main.scss */
             #wrapper .container .column ul.item-list li.item .item-container .weight {
               text-align: center; }
-            /* line 120, ../sass/_main.scss */
+            /* line 127, ../sass/_main.scss */
             #wrapper .container .column ul.item-list li.item .item-container .fresh-label {
               position: absolute;
               top: 63px;
@@ -8065,21 +8070,21 @@ div.jqplot-noData-container {
               color: #eaeaea;
               font-size: 16px; }
               @media (min-device-width: 320px) and (max-device-width: 480px) {
-                /* line 120, ../sass/_main.scss */
+                /* line 127, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .fresh-label {
                   top: 25px;
                   right: 18px !important;
                   font-size: 14px; } }
               @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-                /* line 120, ../sass/_main.scss */
+                /* line 127, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .fresh-label {
                   font-size: 19px;
                   right: 90px !important; } }
               @media screen and (max-width: 1200px) {
-                /* line 120, ../sass/_main.scss */
+                /* line 127, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .fresh-label {
                   right: 80px; } }
-            /* line 143, ../sass/_main.scss */
+            /* line 150, ../sass/_main.scss */
             #wrapper .container .column ul.item-list li.item .item-container .frozen-label {
               position: absolute;
               top: 85px;
@@ -8087,59 +8092,59 @@ div.jqplot-noData-container {
               color: #eaeaea;
               font-size: 16px; }
               @media (min-device-width: 320px) and (max-device-width: 480px) {
-                /* line 143, ../sass/_main.scss */
+                /* line 150, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .frozen-label {
                   top: 46px;
                   right: 10px !important;
                   font-size: 14px; } }
               @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-                /* line 143, ../sass/_main.scss */
+                /* line 150, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .frozen-label {
                   font-size: 19px; } }
               @media screen and (max-width: 1200px) {
-                /* line 143, ../sass/_main.scss */
+                /* line 150, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .frozen-label {
                   right: 80px; } }
-            /* line 166, ../sass/_main.scss */
+            /* line 173, ../sass/_main.scss */
             #wrapper .container .column ul.item-list li.item .item-container .fresh-price {
               position: absolute;
               top: 63px;
               right: 96px;
               font-size: 16px; }
               @media (min-device-width: 320px) and (max-device-width: 480px) {
-                /* line 166, ../sass/_main.scss */
+                /* line 173, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .fresh-price {
                   top: 25px;
                   right: 62px !important;
                   font-size: 14px; } }
               @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-                /* line 166, ../sass/_main.scss */
+                /* line 173, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .fresh-price {
                   font-size: 19px;
                   right: 145px !important; } }
               @media screen and (max-width: 1200px) {
-                /* line 166, ../sass/_main.scss */
+                /* line 173, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .fresh-price {
                   right: 80px; } }
-            /* line 188, ../sass/_main.scss */
+            /* line 195, ../sass/_main.scss */
             #wrapper .container .column ul.item-list li.item .item-container .frozen-price {
               position: absolute;
               top: 85px;
               right: 96px;
               font-size: 16px; }
               @media (min-device-width: 320px) and (max-device-width: 480px) {
-                /* line 188, ../sass/_main.scss */
+                /* line 195, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .frozen-price {
                   top: 46px;
                   right: 62px !important;
                   font-size: 14px; } }
               @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-                /* line 188, ../sass/_main.scss */
+                /* line 195, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .frozen-price {
                   font-size: 19px;
                   right: 145px !important; } }
               @media screen and (max-width: 1200px) {
-                /* line 188, ../sass/_main.scss */
+                /* line 195, ../sass/_main.scss */
                 #wrapper .container .column ul.item-list li.item .item-container .frozen-price {
                   right: 80px; } }
 

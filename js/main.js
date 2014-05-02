@@ -6,9 +6,10 @@ $(function() {
 	}
 });
 
+// resize graph for iPad
 $(function() {
 	if( /iPad/i.test(navigator.userAgent) ) {
-		$( "#graph" ).replaceWith( "<div id='graph' style='width:800px; height:650px'></div>" );
+		$( "#graph" ).replaceWith( "<div id='graph' style='width:770px; height:550px'></div>" );
 	}
 });
 
@@ -57,12 +58,6 @@ $(document).ready(function(){
 	$(".close").click( function() {
 		$('#aboutContainer').removeClass('appear');
 	});
-
-
-	// if ($(window).width() < 1024) {
-	//    alert('Less than 960');
-	// }
-
 
 
 
