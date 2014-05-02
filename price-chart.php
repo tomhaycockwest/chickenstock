@@ -81,6 +81,7 @@
 
 			<div class="graph-container">
 				<div id="graph" style="width:1300px; height:700px"></div>
+				
 			</div>
 
 

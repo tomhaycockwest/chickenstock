@@ -7817,17 +7817,24 @@ div.jqplot-noData-container {
   bottom: 0;
   background-image: url("../img/perforated_white_leather.jpg");
   z-index: 3; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    /* line 1, ../sass/_nav.scss */
+    .nav {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 672px !important; } }
   @media (min-device-width: 320px) and (max-device-width: 480px) {
     /* line 1, ../sass/_nav.scss */
     .nav {
       display: none; } }
-  /* line 15, ../sass/_nav.scss */
+  /* line 23, ../sass/_nav.scss */
   .nav #logo {
     display: block;
     padding: 4px 0;
     cursor: auto;
-    margin: 10px auto 10px auto; }
-  /* line 22, ../sass/_nav.scss */
+    margin: 22px 0 0 22px; }
+  /* line 31, ../sass/_nav.scss */
   .nav ul {
     display: block;
     list-style: none;
@@ -7835,12 +7842,12 @@ div.jqplot-noData-container {
     margin: 0;
     padding: 5px 0 0 0;
     text-align: center; }
-    /* line 30, ../sass/_nav.scss */
+    /* line 39, ../sass/_nav.scss */
     .nav ul li {
       display: block;
       padding: 10px 0 10px 8px;
       border-bottom: 1px solid #1f1f1f; }
-    /* line 36, ../sass/_nav.scss */
+    /* line 45, ../sass/_nav.scss */
     .nav ul .about-link {
       display: block;
       position: absolute;
@@ -7853,7 +7860,7 @@ div.jqplot-noData-container {
       border-bottom: none;
       border-top: 1px solid #1f1f1f; }
 
-/* line 51, ../sass/_nav.scss */
+/* line 60, ../sass/_nav.scss */
 .mobile-nav {
   position: absolute;
   bottom: -2px;
@@ -7861,14 +7868,14 @@ div.jqplot-noData-container {
   width: 100%;
   z-index: 9501; }
 
-/* line 59, ../sass/_nav.scss */
+/* line 68, ../sass/_nav.scss */
 .active {
   color: #bf4423 !important;
   background-color: #28292c !important;
   border-color: #313542 !important;
   border-top: none; }
 
-/* line 67, ../sass/_nav.scss */
+/* line 76, ../sass/_nav.scss */
 .mobile {
   padding: 6px 15.6px;
   color: white;
@@ -7876,20 +7883,20 @@ div.jqplot-noData-container {
   border-color: #313542;
   border-left-width: 2px;
   border-right-width: 2px; }
-  /* line 75, ../sass/_nav.scss */
+  /* line 84, ../sass/_nav.scss */
   .mobile:first-child {
     border-left: none; }
-  /* line 79, ../sass/_nav.scss */
+  /* line 88, ../sass/_nav.scss */
   .mobile:last-child {
     border-right: none; }
-  /* line 84, ../sass/_nav.scss */
+  /* line 93, ../sass/_nav.scss */
   .mobile:active, .mobile:hover {
     color: #bf4423 !important;
     background-color: #28292c !important;
     border-color: #313542 !important;
     border-top: none; }
 
-/* line 95, ../sass/_nav.scss */
+/* line 104, ../sass/_nav.scss */
 #chicken .chicken,
 #turkey .turkey,
 #duckling .duckling,

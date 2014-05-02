@@ -1,8 +1,14 @@
 
 $(function() {
-	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 		window.location.href = "http://staging.chickenstockapp.com/index-mobile.php";
 		stop();
+	}
+});
+
+$(function() {
+	if( /iPad/i.test(navigator.userAgent) ) {
+		$( "#graph" ).replaceWith( "<div id='graph' style='width:800px; height:650px'></div>" );
 	}
 });
 
@@ -51,6 +57,12 @@ $(document).ready(function(){
 	$(".close").click( function() {
 		$('#aboutContainer').removeClass('appear');
 	});
+
+
+	// if ($(window).width() < 1024) {
+	//    alert('Less than 960');
+	// }
+
 
 
 

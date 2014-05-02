@@ -8,6 +8,14 @@
 	background-image: url('../img/perforated_white_leather.jpg');
 	z-index: 3;
 
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+		position: fixed;
+		bottom: 0;
+		width:100%;
+		height: 672px !important;
+	}
+
+
 	@media (min-device-width : 320px) and (max-device-width : 480px) {
 		display: none;
 	}
@@ -16,7 +24,8 @@
 		display: block;
 		padding: 4px 0;
 		cursor: auto;
-		margin: 10px auto 10px auto;
+		// margin: 10px auto 10px auto;
+		margin: 22px 0 0 22px;
 	}
 
 	ul {
