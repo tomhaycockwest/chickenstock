@@ -389,6 +389,10 @@ $(document).ready(function () {
                 renderer:$.jqplot.DateAxisRenderer,
                 tickOptions:{formatString:'%b'},
                 },
+                yaxis:{
+                    label:'Pence per Kilo',
+                    labelRenderer: $.jqplot.CanvasAxisLabelRenderer
+                },
 
             },
             highlighter: {
