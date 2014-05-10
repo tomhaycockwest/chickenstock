@@ -86,6 +86,14 @@
 				height: 150px;
 				border-bottom: solid 1px $border;
 
+				@media only screen and (min-width : 1200px) and (max-width : 1440px) {
+					height: 88px;
+				}
+
+				@media only screen and (min-width : 1440px) and (max-width : 1824px) {
+					height: 105px;
+				}
+
 
 				@media (min-device-width : 320px) and (max-device-width : 480px) {
 					height: 70px;
@@ -104,6 +112,10 @@
 						left: 40px;
 						top: 63px;
 						color: #eaeaea;
+
+						@media only screen and (min-width : 1224px) and (max-width : 1824px) {
+							width: 97px;
+						}
 
 						@media (min-device-width : 320px) and (max-device-width : 480px) {
 							top: 25px;

@@ -8,4 +8,5 @@
 <script type="text/javascript" src="js/jquery-csv.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/remote-ck.js"></script>
+<script type="text/javascript" src="js/retina.js"></script>
 

@@ -5,13 +5,13 @@
 				<a href="index.php"><img id="logo" src="img/logo.png"></a>
 				<ul id="nav-items">
 					<li>
-						<a href="index.php"><img src="img/Overview-selected.png"></a>
+						<a href="index.php"><img src="img/overview-selected.png"></a>
 					</li>
 					<li>
 						<a href="price-chart.php"><img src="img/price-chart.png"></a>
 					</li>
 					<li class="about-link">
-						<a id="aboutClick" href="#"><img src="img/About.png"></a>
+						<a id="aboutClick" href="#"><img src="img/about.png"></a>
 					</li>
 				</ul>
 			</div>

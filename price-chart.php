@@ -12,7 +12,7 @@
 					<a href="price-chart.php"><img src="img/price-chart-selected.png"></a>
 				</li>
 				<li class="about-link">
-					<a id="aboutClick" href="#"><img src="img/About.png"></a>
+					<a id="aboutClick" href="#"><img src="img/about.png"></a>
 				</li>
 			</ul>
 		</div>
@@ -80,7 +80,7 @@
 			</div>
 
 			<div class="graph-container">
-				<div id="graph" style="width:1300px; height:700px"></div>
+				<div id="graph" style="width:1600px; height:900px"></div>
 				
 			</div>
 

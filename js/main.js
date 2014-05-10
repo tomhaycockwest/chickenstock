@@ -1,5 +1,5 @@
 // resize graph for iPad
-
+var current_width = $(window).width();
 $(function() {
 	if( /iPad/i.test(navigator.userAgent) ) {
 		$( "#graph" ).replaceWith( "<div id='graph' style='width:770px; height:550px'></div>" );
@@ -15,7 +15,12 @@ $(document).ready(function(){
 			return false;
 		});
 
-
+	if (current_width < 1824) {
+		$( "#graph" ).replaceWith( "<div id='graph' style='width:1155px; height:625px'></div>" );
+	} 
+	if (current_width < 1440) {
+		$( "#graph" ).replaceWith( "<div id='graph' style='width:1000px; height:525px'></div>" );
+	}
 	// Control Settings
 
 	// Mobile Nav Selector
