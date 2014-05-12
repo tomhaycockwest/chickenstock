@@ -346,7 +346,7 @@ $(document).ready(function () {
         var seriesOptions = [
                     {
                         label:currentYear,
-                        color:'#bf4423',
+                        color:'#ff0',
                         shadow: false
                     },
                     {
@@ -356,7 +356,7 @@ $(document).ready(function () {
                     },
                     {
                         label:yearBeforeLast,
-                        color:'#ff0',
+                        color:'#bf4423',
                         shadow: false
                     }
                 ];
@@ -412,7 +412,7 @@ $(document).ready(function () {
         seriesOptions = [
                         {
                             label:currentYear,
-                            color:'#bf4423',
+                            color:'#ff0',
                             shadow: false
                         },
                         {
@@ -422,7 +422,7 @@ $(document).ready(function () {
                         },
                         {
                             label:yearBeforeLast,
-                            color:'#ff0',
+                            color:'#bf4423',
                             shadow: false
                         }
                     ];
@@ -433,17 +433,17 @@ $(document).ready(function () {
         seriesOptions = [
                         {
                             label:currentYear,
-                            color:'#0c5888',
+                            color:'#CFE2D0',
                             shadow: false
                         },
                         {
                             label:lyear,
-                            color:'#0084d8',
+                            color:'#6dabe2',
                             shadow: false
                         },
                         {
                             label:yearBeforeLast,
-                            color:'#ff0',
+                            color:'#104778',
                             shadow: false
                         }
                     ];
