@@ -6,7 +6,7 @@
 			<a href="index.php"><img id="logo" src="img/logo.png"></a>
 			<ul id="nav-items">
 				<li>
-					<a href="index.php"><img src="img/Overview.png"></a>
+					<a href="index.php"><img src="img/overview.png"></a>
 				</li>
 				<li>
 					<a href="price-chart.php"><img src="img/price-chart-selected.png"></a>
