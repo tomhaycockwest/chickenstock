@@ -8217,16 +8217,26 @@ div.jqplot-noData-container {
     #aboutContainer #about p {
       padding: 0 20px 0 20px; }
     /* line 30, ../sass/_about.scss */
+    #aboutContainer #about #bu_logo {
+      width: 30px;
+      height: 20px;
+      position: absolute;
+      bottom: 15px;
+      left: 25px; }
+      /* line 37, ../sass/_about.scss */
+      #aboutContainer #about #bu_logo img {
+        opacity: 0.3; }
+    /* line 42, ../sass/_about.scss */
     #aboutContainer #about #source {
       margin: 0;
       float: right; }
-    /* line 35, ../sass/_about.scss */
+    /* line 47, ../sass/_about.scss */
     #aboutContainer #about .close {
       position: absolute;
       top: 5px;
       right: 10px; }
 
-/* line 43, ../sass/_about.scss */
+/* line 55, ../sass/_about.scss */
 .appear {
   display: block !important; }
 
