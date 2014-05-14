@@ -1,9 +1,8 @@
 // load in csv file
-// var prices = "http://staging.chickenstockapp.com/test.csv";
 var csv_as_array = [];
 function loadPrices() {
   $.ajax({
-    url: 'test.csv',
+    url: 'prices.csv',
     async: false,
     success: function (csvd) {
         csv_as_array = $.csv.toArrays(csvd);
@@ -402,7 +401,6 @@ $(document).ready(function () {
             series: seriesOptions,
 
         });
-            console.log('render');
 
     }
 

@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="apple-touch-icon" href="img/app-icon.png" />
+    <link rel="shortcut icon" href="img/favicon.ico">
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
    <script type="text/javascript">
